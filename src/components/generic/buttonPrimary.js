@@ -7,6 +7,8 @@ class ButtonPrimary extends React.Component {
     return (
       <>
         <Button
+          hidden={this.props.hidden}
+          style={this.props.style}
           className={"primary-button btn-danger " + this.props.className}
           variant="primary"
           id={this.props.id}

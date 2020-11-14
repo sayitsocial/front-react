@@ -7,6 +7,8 @@ class ButtonLight extends React.Component {
     return (
       <>
         <Button
+          hidden={this.props.hidden}
+          style={this.props.style}
           className={"light-button bg-light " + this.props.className}
           variant="primary"
           id={this.props.id}

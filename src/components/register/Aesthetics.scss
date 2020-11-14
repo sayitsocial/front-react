@@ -1,0 +1,16 @@
+.left-bar {
+  position: fixed;
+  top: -90px;
+  left: -50px;
+}
+
+.right-bar {
+  position: fixed;
+  bottom: -120px;
+  right: -40px;
+}
+
+.left-bar,
+.right-bar {
+  z-index: -100;
+}

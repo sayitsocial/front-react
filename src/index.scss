@@ -26,9 +26,57 @@ main{
   background: url('./banner.png');
 }
 
+.banner-info{
+  border-radius:15px;
+  padding:2rem;
+  background-color:white;
+}
+
+.subtype-activity{
+  margin-left:1rem;
+  background-color: white;
+  border:2px solid $pink;
+  border-radius:15px;
+  color:$pink;
+}
+
 .banner-container{
   position: relative;
   height: 100%;
+}
+
+.flex-points{
+  display: flex;
+
+  p{
+    margin-right:1rem;
+  }
+
+  img{
+    height:30px;
+    width:30px;
+    transform: translate(0,-10px);
+  }
+
+  .points{
+    margin-left:0.3rem;
+    font-size:2rem;
+  }
+}
+
+.event-organizer-info{
+  h5{
+    font-weight:normal;
+    font-size: 1.8rem;
+  }
+
+  p{
+    text-transform: capitalize;
+
+    b{
+      font-size:1rem;
+    }
+  }
 }
 
 .flex-banner-top,.flex-banner-bottom{

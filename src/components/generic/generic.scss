@@ -30,16 +30,38 @@
   font-size: 1.5rem;
   font-stretch: expanded;
   font-weight: 400;
-  margin-left: 5rem;
-  margin-right: 1rem;
 }
 
 .main-navbar {
   background-color: $primary;
+  margin: auto;
 }
 
-.navlink-icon {
+.nav-link {
   margin-right: 2rem;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+#formSearchbar {
+  width: 90%;
+}
+
+.main-navbar-brand {
+  margin-left: 3rem;
+}
+.nav-icon-group {
+  margin-right: 3rem;
+}
+
+@include media("<=desktop") {
+  .main-navbar-brand {
+    margin-left: 5px;
+  }
+  .nav-icon-group {
+    margin-right: 5px;
+  }
 }
 
 .footer {

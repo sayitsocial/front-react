@@ -1,0 +1,14 @@
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.register-navbar {
+  padding: 2rem 9rem 0 9rem;
+}
+
+.register-navbar .navbar-nav .nav-item {
+  margin-right: 5rem;
+  &:last-child {
+    margin-right: 0;
+  }
+}

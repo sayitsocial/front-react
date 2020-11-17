@@ -2,13 +2,18 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import "./index.scss";
-import Switch from "./router/router";
+import store from "./store";
+import { Provider } from "react-redux";
 import reportWebVitals from "./reportWebVitals";
+import App from "./App";
 
 ReactDOM.render(
-  <BrowserRouter>
-    <Switch />
-  </BrowserRouter>,
+  <Provider store={store}>
+    <BrowserRouter>
+      <App></App>
+    </BrowserRouter>
+  </Provider>,
+
   document.getElementById("root")
 );
 

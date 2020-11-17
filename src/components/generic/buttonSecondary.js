@@ -9,10 +9,9 @@ class ButtonPrimary extends React.Component {
         <Button
           hidden={this.props.hidden}
           style={this.props.style}
-          className={"primary-button btn-danger " + this.props.className}
+          className={"secondary-button " + this.props.className}
           variant='primary'
           id={this.props.id}
-          type={this.props.type}
           onClick={this.props.onClick ? this.props.onClick.bind(this) : null}
         >
           {this.props.label}

@@ -1,0 +1,107 @@
+@import "../../styles/base.scss";
+
+.choosemodel-img {
+  position: relative;
+  width: auto;
+  height: 90vh;
+  left: 3rem;
+  bottom: -3px;
+  overflow: hidden;
+}
+
+.signup-bottom {
+  padding: 15px 15px 0 15px;
+}
+
+.title {
+  font-weight: 400 !important;
+}
+
+.subtitle {
+  font-family: "Kanit";
+  color: $text-secondary;
+  font-size: 1.25rem;
+  margin: 0.7rem 0 0 0.3rem;
+  font-weight: 200;
+}
+
+.form-heading {
+  margin-bottom: 2rem;
+}
+
+#identity-form {
+  margin: 0 0 0 0.5rem;
+}
+
+#identity-form .form-check {
+  margin-right: 7rem;
+}
+
+#org-card-group {
+  margin-top: 2rem;
+  margin-left: -3rem;
+  width: 70% !important;
+}
+
+.type-card {
+  padding: 10px;
+  border: none;
+  outline: none;
+  background: none;
+  -webkit-box-shadow: 4px 2px 10px 1px rgba(0, 0, 0, 0.041);
+  box-shadow: 4px 2px 10px 1px rgba(0, 0, 0, 0.041);
+  border-radius: 15px;
+}
+
+.type-card > .card-img-top {
+  width: 50px;
+  height: 50px;
+}
+
+.type-card-border {
+  border: 2px solid #ea4997;
+}
+
+.type-card .card-title {
+  text-align: center;
+}
+
+.form-navigation {
+  margin-top: 4rem;
+}
+
+.navigation-button-group {
+  margin-right: 20rem;
+}
+
+#second-form-group {
+  margin-right: 20rem;
+}
+
+#second-form-group input,
+#formLoginEmail,
+#formLoginPassword {
+  border-radius: 5px;
+  padding: 8px;
+  border: 1px solid #723fec;
+  font-size: 16px;
+}
+
+#formLoginEmail,
+#formLoginPassword {
+  font-family: "Kanit";
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 10px;
+  width: 45%;
+}
+
+.password-container {
+  margin-top: 3rem;
+}
+
+.login-submit {
+  height: 2.8rem;
+  width: 20%;
+  margin-top: 1rem;
+}

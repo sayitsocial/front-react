@@ -1,6 +1,7 @@
 @import "../../styles/base.scss";
 
 .primary-button,
+.secondary-button,
 .light-button {
   outline: none;
   border: none;
@@ -11,6 +12,130 @@
   padding: 0.5rem 1.8rem;
 }
 
+.secondary-button {
+  border-radius: 5px;
+  background-color: $button-secondary;
+}
+
 .light-button {
   color: $text-primary;
+}
+
+.navbar-brand img {
+  width: 50px !important;
+  height: 50px !important;
+}
+
+.main-navbar-brand {
+  font-size: 1.5rem;
+  font-stretch: expanded;
+  font-weight: 400;
+}
+
+.main-navbar {
+  background-color: $primary;
+  margin: auto;
+}
+
+.nav-link {
+  margin-right: 2rem;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+#formSearchbar {
+  width: 90%;
+}
+
+.main-navbar-brand {
+  margin-left: 3rem;
+}
+.nav-icon-group {
+  margin-right: 3rem;
+}
+
+@include media("<=xl") {
+  .main-navbar-brand {
+    margin-left: 5px;
+  }
+  .nav-icon-group {
+    margin-right: 5px;
+  }
+}
+@include media("<=md") {
+  .icon-name {
+    display: block !important;
+    margin-left: 1rem;
+  }
+}
+@include media("<=sm") {
+  #basic-navbar-nav {
+    position: relative;
+    top: -2.5rem;
+  }
+  .search {
+    margin-top: 0.65rem;
+  }
+  .nav-link {
+    margin-right: 1rem;
+    &:last-child {
+      margin-right: 1rem;
+    }
+  }
+  .head {
+    display: none;
+  }
+  .ham {
+    position: relative;
+    right: -16rem;
+    top: -8rem;
+  }
+  .links {
+    margin-left: 0.82rem;
+    display: flex;
+    justify-content: space-between;
+    .icon-name {
+      font-weight: 700;
+    }
+  }
+}
+.footer-container {
+  background-color: #111111;
+  padding-top: 80px;
+  margin-top: 2rem;
+  color: #fff;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.footer-widget {
+  padding-bottom: 50px;
+}
+
+.footer-widget a {
+  color: $text-primary-inverse;
+  font-weight: 600;
+}
+
+.footer-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 44px;
+  color: #fff;
+}
+
+.footer-line {
+  border-color: #afafaf;
+}
+
+.button-left {
+  float: right;
+}
+
+.footer-subtitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: #888d90;
+  margin: 0 0 1rem 0;
 }

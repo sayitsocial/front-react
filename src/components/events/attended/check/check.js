@@ -7,7 +7,7 @@ class CheckBoxes extends Component {
     return (
       <>
         <Container>
-          <h6 className='title'>In-Person</h6>
+          <h6 className='checkbox-title'>In-Person</h6>
           <FormCheck />
         </Container>
       </>

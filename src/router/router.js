@@ -1,6 +1,7 @@
 import RegisterPage from "../Pages/register/registerPage";
 import EventsAttended from "../Pages/events/attended/eventsAttended";
 import EventsAttending from "../Pages/events/attending/eventsAttending";
+import Navbar from "../components/generic/Navbar";
 
 const { Switch, Route } = require("react-router-dom");
 

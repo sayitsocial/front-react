@@ -2,14 +2,10 @@
 
 body {
   margin: 0;
-<<<<<<< HEAD
+
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
-
-=======
-  font-family: "Kanit";
->>>>>>> 0ed9ca72885d31464c5db0264e27a3bfa30277c5
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: whitesmoke;
@@ -33,9 +29,57 @@ main{
   background: url('./banner.png');
 }
 
+.banner-info{
+  border-radius:15px;
+  padding:2rem;
+  background-color:white;
+}
+
+.subtype-activity{
+  margin-left:1rem;
+  background-color: white;
+  border:2px solid $pink;
+  border-radius:15px;
+  color:$pink;
+}
+
 .banner-container{
   position: relative;
   height: 100%;
+}
+
+.flex-points{
+  display: flex;
+
+  p{
+    margin-right:1rem;
+  }
+
+  img{
+    height:30px;
+    width:30px;
+    transform: translate(0,-10px);
+  }
+
+  .points{
+    margin-left:0.3rem;
+    font-size:2rem;
+  }
+}
+
+.event-organizer-info{
+  h5{
+    font-weight:normal;
+    font-size: 1.8rem;
+  }
+
+  p{
+    text-transform: capitalize;
+
+    b{
+      font-size:1rem;
+    }
+  }
 }
 
 .flex-banner-top,.flex-banner-bottom{

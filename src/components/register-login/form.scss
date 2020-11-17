@@ -1,4 +1,4 @@
-@import "../../../styles/base.scss";
+@import "../../styles/base.scss";
 
 .choosemodel-img {
   position: relative;
@@ -18,14 +18,15 @@
 }
 
 .subtitle {
+  font-family: "Kanit";
   color: $text-secondary;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   margin: 0.7rem 0 0 0.3rem;
   font-weight: 200;
 }
 
 .form-heading {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 #identity-form {
@@ -77,13 +78,30 @@
   margin-right: 20rem;
 }
 
-#second-form-group input {
+#second-form-group input,
+#formLoginEmail,
+#formLoginPassword {
   border-radius: 5px;
   padding: 8px;
-  border: 2px solid #723fec;
+  border: 1px solid #723fec;
   font-size: 16px;
+}
+
+#formLoginEmail,
+#formLoginPassword {
+  font-family: "Kanit";
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 10px;
+  width: 45%;
 }
 
 .password-container {
   margin-top: 3rem;
+}
+
+.login-submit {
+  height: 2.8rem;
+  width: 20%;
+  margin-top: 1rem;
 }

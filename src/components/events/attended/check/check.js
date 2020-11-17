@@ -1,19 +1,18 @@
 import React, { Component } from "react";
-import Labels from "../check/labels";
+import { Container } from "react-bootstrap";
+import FormCheck from "./formCheck";
 
-class Check_boxes extends Component {
-	render() {
-		return (
-			<>
-				<div>
-					<h6 className="title">In-Person</h6>
-					<form className="label-check">
-						<Labels />
-					</form>
-				</div>
-			</>
-		);
-	}
+class CheckBoxes extends Component {
+  render() {
+    return (
+      <>
+        <Container>
+          <h6 className='title'>In-Person</h6>
+          <FormCheck />
+        </Container>
+      </>
+    );
+  }
 }
 
-export default Check_boxes;
+export default CheckBoxes;

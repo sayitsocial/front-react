@@ -4,13 +4,13 @@ import { BrowserRouter } from "react-router-dom";
 import "./index.scss";
 import store from "./store";
 import { Provider } from "react-redux";
-import Switch from "./router/router";
 import reportWebVitals from "./reportWebVitals";
+import App from "./App";
 
 ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>
-      <Switch />
+      <App></App>
     </BrowserRouter>
   </Provider>,
 

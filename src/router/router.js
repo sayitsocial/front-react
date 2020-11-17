@@ -2,17 +2,50 @@ import RegisterPage from "../Pages/register/registerPage";
 import EventsAttended from "../Pages/events/attended/eventsAttended";
 import EventsAttending from "../Pages/events/attending/eventsAttending";
 import Navbar from "../components/generic/Navbar";
-
-const { Switch, Route } = require("react-router-dom");
+import NavbarRegister from "../components/register/NavbarComponent";
+import Footer from "../components/generic/Footer";
 
 function Routes() {
-  return (
-    <Switch>
-      <Route path='/register' component={RegisterPage} />
-      <Route path='/events/attended' component={EventsAttended} />
-      <Route path='/events/attending' component={EventsAttending} />
-    </Switch>
-  );
+  const routesMain = [
+    {
+      path: "/register",
+      main: RegisterPage,
+    },
+    {
+      path: "/events/attended",
+      main: EventsAttended,
+    },
+    {
+      path: "/events/attending",
+      main: EventsAttending,
+    },
+  ];
+
+  const routesNav = [
+    {
+      path: "/register",
+      exact: true,
+      topbar: NavbarRegister,
+    },
+    {
+      path: "/",
+      topbar: Navbar,
+    },
+  ];
+
+  const routesFooter = [
+    {
+      path: "/register",
+      exact: true,
+      footer: () => <> </>,
+    },
+    {
+      path: "/",
+      footer: Footer,
+    },
+  ];
+
+  return { routesMain, routesNav, routesFooter };
 }
 
 export default Routes;

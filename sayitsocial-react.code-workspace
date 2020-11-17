@@ -17,5 +17,15 @@
 		"html.format.endWithNewline": true,
 		"html.format.indentInnerHtml": true,
 		"prettier.jsxSingleQuote": true
+	},
+	"extensions": {
+		"recommendations": [
+			"esbenp.prettier-vscode",
+			"formulahendry.auto-close-tag",
+			"formulahendry.auto-close-tag",
+			"dbaeumer.vscode-eslint",
+			"wayou.vscode-todo-highlight",
+			"stylelint.vscode-stylelint"
+		]
 	}
 }

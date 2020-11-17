@@ -19,23 +19,23 @@ class IdentitySelection extends React.Component {
   render() {
     return (
       <div hidden={this.props.hidden}>
-        <form id="identity-form">
+        <form id='identity-form'>
           <Row>
             <Col md={12}>
               <Form.Check
-                type="radio"
-                name="identityRadio"
-                label="Individual"
-                variant="secondary  "
+                type='radio'
+                name='identityRadio'
+                label='Individual'
+                variant='secondary  '
                 value={0}
                 onChange={this.handleIdentity.bind(this)}
                 defaultChecked
                 inline
               ></Form.Check>
               <Form.Check
-                type="radio"
-                name="identityRadio"
-                label="Organisation"
+                type='radio'
+                name='identityRadio'
+                label='Organisation'
                 value={1}
                 onChange={this.handleIdentity.bind(this)}
                 inline

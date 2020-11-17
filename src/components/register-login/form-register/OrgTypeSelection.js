@@ -31,7 +31,7 @@ class OrgTypeSelection extends React.Component {
   render() {
     return (
       <>
-        <CardDeck id="org-card-group">
+        <CardDeck id='org-card-group'>
           {this.state.defaultTypes.map((type, index) => (
             <Card
               className={
@@ -44,12 +44,12 @@ class OrgTypeSelection extends React.Component {
               onClick={this.handleType}
             >
               <Card.Img
-                className="mx-auto img-fluid"
-                variant="top"
+                className='mx-auto img-fluid'
+                variant='top'
                 src={type.img}
               ></Card.Img>
               <Card.Body>
-                <Card.Title className="mx-auto">{type.name}</Card.Title>
+                <Card.Title className='mx-auto'>{type.name}</Card.Title>
               </Card.Body>
             </Card>
           ))}

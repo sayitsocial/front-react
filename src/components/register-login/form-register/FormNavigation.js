@@ -28,13 +28,13 @@ class FormNavigation extends React.Component {
   render() {
     return (
       <div className={this.props.className} style={this.props.style}>
-        <Row className="navigation-button-group">
-          <Col className="d-flex justify-content-between" md={12}>
+        <Row className='navigation-button-group'>
+          <Col className='d-flex justify-content-between' md={12}>
             <ButtonLight
               style={{
                 visibility: this.props.formStage === 0 ? "hidden" : "visible",
               }}
-              label="Back"
+              label='Back'
               onClick={this.decrementStage}
             ></ButtonLight>
             <ButtonPrimary

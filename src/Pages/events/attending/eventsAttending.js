@@ -5,7 +5,7 @@ class EventsAttending extends Component {
 	render() {
 		return (
 			<>
-				<h1>Hey Lotus</h1>
+				<h1 className="display-1 text-danger">Hey Lotus</h1>
 			</>
 		);
 	}

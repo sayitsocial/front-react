@@ -13,9 +13,6 @@ class EventsAttended extends Component {
 				<Row className="main-row">
 					<Col md={3}>
 						<Check_boxes />
-						<Check_boxes />
-						<Check_boxes />
-						<Check_boxes />
 					</Col>
 					<Col md={9}>
 						<Row>

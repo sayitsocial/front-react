@@ -1,5 +1,5 @@
 import React from 'react';
-import CancelAttendButton from './cancelAttendButton';
+// import CancelAttendButton from './cancelAttendButton';
 import AttendButton from './attendButton';
 
 

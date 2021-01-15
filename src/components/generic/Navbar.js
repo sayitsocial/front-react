@@ -62,7 +62,7 @@ class Navbar extends React.Component {
           <Col md={3}>
             <BSNavbar.Toggle className='ham' aria-controls='basic-navbar-nav' />
             <BSNavbar.Collapse id='basic-navbar-nav'>
-              <Nav className=' nav-icon-group' className='mx-auto'>
+              <Nav className=' nav-icon-group mx-auto'>
                 {this.state.navlinks.map((type, index) => (
                   <Nav.Link
                     className='d-flex links'

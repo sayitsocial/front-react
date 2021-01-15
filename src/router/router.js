@@ -6,6 +6,7 @@ import Navbar from "../components/generic/Navbar";
 import NavbarRegister from "../components/register-login/NavbarComponent";
 import Footer from "../components/generic/Footer";
 import Event from "../Pages/event/Event";
+import Host from "../Pages/events/host/hostEvent";
 
 function Routes() {
   const routesMain = [
@@ -28,6 +29,10 @@ function Routes() {
     {
       path: "/event",
       main: Event,
+    },
+    {
+      path: "/events/host",
+      main: Host,
     },
   ];
 

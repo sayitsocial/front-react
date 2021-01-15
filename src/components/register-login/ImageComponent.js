@@ -5,9 +5,9 @@ class ImageComponent extends React.Component {
     return (
       <>
         <img
-          className="m-auto choosemodel-img img-fluid"
-          src={process.env.PUBLIC_URL + "/register/choose-identity-model.png"}
-          alt="Choose identity model"
+          className='m-auto choosemodel-img img-fluid'
+          src={process.env.PUBLIC_URL + this.props.src}
+          alt='Choose identity model'
         />
       </>
     );

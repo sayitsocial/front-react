@@ -1,8 +1,8 @@
 import React from "react";
 import CornerAsthetics from "../../components/register-login/CornerAesthetics";
-import FormComponent from "../../components/register-login/form-register/FormComponent";
+import FormComponent from "../../components/register-login/form-login/FormComponent";
 
-class RegisterPage extends React.Component {
+class LoginPage extends React.Component {
   render() {
     return (
       <>
@@ -13,4 +13,4 @@ class RegisterPage extends React.Component {
   }
 }
 
-export default RegisterPage;
+export default LoginPage;

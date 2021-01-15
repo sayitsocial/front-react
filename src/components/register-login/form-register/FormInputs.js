@@ -11,7 +11,7 @@ class FormInput extends React.Component {
   render() {
     return (
       <div hidden={this.props.hidden}>
-        <Form id="second-form-group">
+        <Form id='second-form-group'>
           <div
             className={
               (this.props.identity === "1" ? "d-none" : "d-flex") +
@@ -20,19 +20,19 @@ class FormInput extends React.Component {
           >
             <Form.Group>
               <Form.Control
-                id="firstname"
-                size="lg"
-                type="text"
-                placeholder="First Name"
+                id='firstname'
+                size='lg'
+                type='text'
+                placeholder='First Name'
                 onChange={this.updateData}
               ></Form.Control>
             </Form.Group>
-            <Form.Group controlId="formLastName">
+            <Form.Group controlId='formLastName'>
               <Form.Control
-                id="lastname"
-                size="lg"
-                type="text"
-                placeholder="Last Name"
+                id='lastname'
+                size='lg'
+                type='text'
+                placeholder='Last Name'
                 onChange={this.updateData}
               ></Form.Control>
             </Form.Group>
@@ -44,10 +44,10 @@ class FormInput extends React.Component {
           >
             <Form.Group>
               <Form.Control
-                id="orgname"
-                size="lg"
-                type="text"
-                placeholder="Name of organisation"
+                id='orgname'
+                size='lg'
+                type='text'
+                placeholder='Name of organisation'
                 onChange={this.updateData}
               ></Form.Control>
             </Form.Group>
@@ -55,21 +55,21 @@ class FormInput extends React.Component {
           <div>
             <Form.Group>
               <Form.Control
-                id="email"
-                size="lg"
-                type="email"
-                placeholder="Email"
+                id='email'
+                size='lg'
+                type='email'
+                placeholder='Email'
                 onChange={this.updateData}
               ></Form.Control>
             </Form.Group>
           </div>
-          <div className="password-container">
+          <div className='password-container'>
             <Form.Group>
               <Form.Control
-                id="password"
-                size="lg"
-                type="password"
-                placeholder="Password"
+                id='password'
+                size='lg'
+                type='password'
+                placeholder='Password'
                 onChange={this.updateData}
               ></Form.Control>
             </Form.Group>

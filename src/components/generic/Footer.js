@@ -32,7 +32,7 @@ class Footer extends React.Component {
   }
   render() {
     return (
-      <div className="footer">
+      <div className='footer-container'>
         <Container>
           <Row>
             <Col xl={6} lg={6} md={6} sm={12}>
@@ -40,18 +40,18 @@ class Footer extends React.Component {
             </Col>
             <Col xl={6} lg={6} md={6} sm={12}>
               <ButtonSecondary
-                className="button-left"
-                label="Get Started"
+                className='button-left'
+                label='Get Started'
               ></ButtonSecondary>
             </Col>
           </Row>
-          <hr class="footer-line" />
+          <hr class='footer-line' />
           <Row>
             {Object.entries(this.state.footerlinks).map(([key, value]) => (
               <Col xl={3} lg={3} md={4} sm={6}>
-                <div className="footer-widget">
-                  <div className="footer-title">{key}</div>
-                  <ul className="list-unstyled">
+                <div className='footer-widget'>
+                  <div className='footer-title'>{key}</div>
+                  <ul className='list-unstyled'>
                     {Object.entries(value).map(([key1, value1]) => (
                       <li>
                         <Link to={value1}>{key1}</Link>
@@ -62,26 +62,26 @@ class Footer extends React.Component {
               </Col>
             ))}
             <Col xl={3} lg={3} md={4} sm={6}>
-              <div className="footer-widget">
+              <div className='footer-widget'>
                 <img
                   src={process.env.PUBLIC_URL + "/navbar/playstore_badge.svg"}
-                  alt="playstore"
-                  width="200"
-                  height="50"
+                  alt='playstore'
+                  width='200'
+                  height='50'
                 ></img>
                 <div>&nbsp;</div>
                 <img
                   src={process.env.PUBLIC_URL + "/navbar/appstore_badge.svg"}
-                  alt="playstore"
-                  width="200"
-                  height="50"
+                  alt='playstore'
+                  width='200'
+                  height='50'
                 ></img>
               </div>
             </Col>
           </Row>
-          <hr class="footer-line" />
+          <hr class='footer-line' />
           <Row>
-            <Col className="text-center footer-subtitle">
+            <Col className='text-center footer-subtitle'>
               SayItSocial 2020. All Rights Reserved
             </Col>
           </Row>

@@ -7,10 +7,10 @@ class NavbarRegister extends React.Component {
   render() {
     return (
       <div>
-        <Navbar className="register-navbar" sticky="top">
+        <Navbar className='register-navbar' sticky='top'>
           <Navbar.Brand>SayItSocial</Navbar.Brand>
           <Navbar.Toggle />
-          <Navbar.Collapse className="justify-content-end">
+          <Navbar.Collapse className='justify-content-end'>
             <Nav>
               <Nav.Item>
                 <Nav.Link>About Us</Nav.Link>

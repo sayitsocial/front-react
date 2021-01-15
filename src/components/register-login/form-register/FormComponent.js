@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import ImageComponent from "../ImageComponent";
-import "./form.scss";
+import "../form.scss";
 import FormInput from "./FormInputs";
 import FormNavigation from "./FormNavigation";
 import { connect } from "react-redux";
@@ -27,25 +27,25 @@ class FormComponent extends React.Component {
   render() {
     return (
       <>
-        <div className="signup-bottom">
+        <div className='signup-bottom'>
           <Row>
-            <Col className="d-flex" md={5}>
-              <ImageComponent></ImageComponent>
+            <Col className='d-flex' md={5}>
+              <ImageComponent src='/register/choose-identity-model.png'></ImageComponent>
             </Col>
-            <Col md={{ span: 6, offset: 1 }} className="d-flex">
-              <Container className="my-auto">
+            <Col md={{ span: 6, offset: 1 }} className='d-flex'>
+              <Container className='my-auto'>
                 <Row>
                   <Col>
                     <Container>
-                      <div className="form-heading">
-                        <p className="display-4 m-0 title">
+                      <div className='form-heading'>
+                        <p className='display-4 m-0 title'>
                           {this.state.headings[this.props.formStage]
                             .split("\n")
                             .map((i, key) => {
                               return <div key={key}>{i}</div>;
                             })}
                         </p>
-                        <h5 className="subtitle">
+                        <h5 className='subtitle'>
                           {this.state.subheadings[this.props.formStage]}
                         </h5>
                       </div>
@@ -75,7 +75,7 @@ class FormComponent extends React.Component {
                         "margin-top":
                           this.props.formStage === 2 ? "0rem" : "4rem",
                       }}
-                      className="form-navigation"
+                      className='form-navigation'
                     ></FormNavigation>
                   </Col>
                 </Row>

@@ -55,7 +55,7 @@
   margin-right: 3rem;
 }
 
-@include media("<=desktop") {
+@include media("<=xl") {
   .main-navbar-brand {
     margin-left: 5px;
   }
@@ -63,10 +63,47 @@
     margin-right: 5px;
   }
 }
-
-.footer {
+@include media("<=md") {
+  .icon-name {
+    display: block !important;
+    margin-left: 1rem;
+  }
+}
+@include media("<=sm") {
+  #basic-navbar-nav {
+    position: relative;
+    top: -2.5rem;
+  }
+  .search {
+    margin-top: 0.65rem;
+  }
+  .nav-link {
+    margin-right: 1rem;
+    &:last-child {
+      margin-right: 1rem;
+    }
+  }
+  .head {
+    display: none;
+  }
+  .ham {
+    position: relative;
+    right: -16rem;
+    top: -8rem;
+  }
+  .links {
+    margin-left: 0.82rem;
+    display: flex;
+    justify-content: space-between;
+    .icon-name {
+      font-weight: 700;
+    }
+  }
+}
+.footer-container {
   background-color: #111111;
   padding-top: 80px;
+  margin-top: 2rem;
   color: #fff;
   font-weight: 400;
   font-size: 17px;

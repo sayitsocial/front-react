@@ -10,7 +10,7 @@ class ButtonPrimary extends React.Component {
           hidden={this.props.hidden}
           style={this.props.style}
           className={"secondary-button " + this.props.className}
-          variant="primary"
+          variant='primary'
           id={this.props.id}
           onClick={this.props.onClick ? this.props.onClick.bind(this) : null}
         >

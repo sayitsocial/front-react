@@ -16,18 +16,15 @@ class EventCard extends Component {
           </div>
           <Card.Body className='zindex-top'>
             <Card.Title>
-              Data Science Meetup <br />
+              {this.props.title} <br />
               <span>
-                <small>12 SEPT MONDAY 2020</small>
+                <small>{this.props.date}</small>
               </span>
             </Card.Title>
-            <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk.
-            </Card.Text>
+            <Card.Text>{this.props.desc}</Card.Text>
           </Card.Body>
           <Card.Footer className='zindex-top'>
-            <h6>Big Events pvt. ltd.</h6>
+            <h6>{this.props.footer_title}</h6>
             <p className='d-flex user'>
               <img
                 className='rounded-circle'
@@ -36,7 +33,7 @@ class EventCard extends Component {
                 src='http://jlantunez.com/imgs/avatar.jpg'
                 alt='Avatar'
               />
-              <p className='joined blue-text'>18k people joined</p>
+              <p className='joined blue-text'>{this.props.footer_link}</p>
             </p>
           </Card.Footer>
         </Card>

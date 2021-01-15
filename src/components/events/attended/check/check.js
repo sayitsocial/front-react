@@ -3,12 +3,28 @@ import { Container } from "react-bootstrap";
 import FormCheck from "./formCheck";
 
 class CheckBoxes extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      options: [
+        {
+          heading: "In Person",
+          data: ["Get Together", "Activity"],
+        },
+        {
+          heading: "Virtual",
+          data: ["Webinar", "Livestream", "Video Events", "Contest"],
+        },
+      ],
+    };
+  }
   render() {
     return (
       <>
         <Container>
-          <h6 className='checkbox-title'>In-Person</h6>
-          <FormCheck />
+          {this.state.options.map((value, index) => (
+            <FormCheck key={index} options={value} />
+          ))}
         </Container>
       </>
     );

@@ -14,9 +14,6 @@ class EventsAttended extends Component {
           <Col md={3} style={{ marginTop: "2rem" }}>
             <Container>
               <CheckBoxes />
-              <CheckBoxes />
-              <CheckBoxes />
-              <CheckBoxes />
             </Container>
           </Col>
           <Col md={9}>

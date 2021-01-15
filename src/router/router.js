@@ -5,6 +5,7 @@ import EventsAttending from "../Pages/events/attending/eventsAttending";
 import Navbar from "../components/generic/Navbar";
 import NavbarRegister from "../components/register-login/NavbarComponent";
 import Footer from "../components/generic/Footer";
+import Event from "../Pages/event/Event";
 
 function Routes() {
   const routesMain = [
@@ -23,6 +24,10 @@ function Routes() {
     {
       path: "/login",
       main: LoginPage,
+    },
+    {
+      path: "/event",
+      main: Event,
     },
   ];
 

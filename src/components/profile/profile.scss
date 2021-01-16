@@ -1,0 +1,40 @@
+body {
+  background-color: #fff;
+}
+/*################ PROFILE HEADER ################*/
+.indv-profile-header,
+.ngo-profile-header {
+  margin: 1rem 2rem 0rem;
+}
+.profile-jumbotron {
+  margin-bottom: 0px !important;
+  padding: 24px 32px;
+}
+.points {
+  font-size: 32px;
+}
+.h4-points {
+  position: relative;
+  left: 5.5rem;
+  top: -1.5rem;
+}
+.btn-view {
+  margin-left: 1.85rem;
+  padding: 12px 35px;
+  font-size: 18px;
+  border-radius: 12px;
+}
+.ngo-profile-following {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.host-follow {
+  text-align: center;
+  padding: 10px;
+}
+/*################ PROFILE HEADER ENDS ################*/
+.ngo-bio,
+.contribution {
+  margin: 1rem 2rem 0rem;
+}

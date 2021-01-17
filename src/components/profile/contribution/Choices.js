@@ -9,7 +9,7 @@ class Choices extends Component {
       <>
         <div className='choices'>
           <h3>Aniket's Interest</h3>
-          <Row>
+          <Row style={{ marginTop: "1.25rem" }}>
             <InterestCard />
             <InterestCard />
             <InterestCard />

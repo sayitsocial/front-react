@@ -1,7 +1,7 @@
 body {
   background-color: #fff;
 }
-/*################ PROFILE HEADER ################*/
+/*################ PROFILE HEADER STARTS ################*/
 .indv-profile-header,
 .ngo-profile-header {
   margin: 1rem 2rem 0rem;
@@ -34,7 +34,18 @@ body {
   padding: 10px;
 }
 /*################ PROFILE HEADER ENDS ################*/
+
+/*################ PROFILE BODY STARTS ################*/
 .ngo-bio,
 .contribution {
   margin: 1rem 2rem 0rem;
 }
+.contribution {
+  height: 25rem;
+}
+.pie-chart {
+  position: relative;
+  top: -11rem;
+  right: 4.5rem;
+}
+/*################ PROFILE BODY ENDS ################*/

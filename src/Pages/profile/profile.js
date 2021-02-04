@@ -4,6 +4,7 @@ import IndividualProfileHeader from "../../components/profile/IndividualProfileH
 import NgoProfileHeader from "../../components/profile/NgoProfileHeader";
 import NgoBio from "../../components/profile/NgoBio";
 import Contribution from "../../components/profile/contribution/Contribution";
+import NgoEventHosted from "../../components/profile/NgoEventHosted";
 
 class Profile extends React.Component {
   render() {
@@ -13,6 +14,7 @@ class Profile extends React.Component {
         <NgoProfileHeader />
         <NgoBio />
         <Contribution />
+        <NgoEventHosted />
       </>
     );
   }

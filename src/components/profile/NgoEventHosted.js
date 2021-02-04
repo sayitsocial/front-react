@@ -20,6 +20,7 @@ class NgoEventHosted extends Component {
               <AttendingCard />
               <AttendingCard />
             </Row>
+            <a href='index.html'>See More</a>
           </Jumbotron>
         </div>
       </>

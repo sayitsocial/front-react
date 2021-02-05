@@ -1,5 +1,8 @@
 @import "~bootstrap/scss/bootstrap";
-
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;400;600&display=swap");
+* {
+  font-family: "Kanit", sans-serif;
+}
 body {
   margin: 0;
 
@@ -17,127 +20,127 @@ $purple: #723fec;
 /*=====================================
                 EVENT
 ======================================*/
-main{
-  margin:5rem 5rem;
+main {
+  margin: 5rem 5rem;
 }
 
-.banner{
+.banner {
   height: 50vh;
-  border-radius:15px;
+  border-radius: 15px;
   position: relative;
-  padding:2rem;
-  background: url('./banner.png');
+  padding: 2rem;
+  background: url("./banner.png");
 }
 
-.banner-info{
-  border-radius:15px;
-  padding:2rem;
-  background-color:white;
-}
-
-.subtype-activity{
-  margin-left:1rem;
+.banner-info {
+  border-radius: 15px;
+  padding: 2rem;
   background-color: white;
-  border:2px solid $pink;
-  border-radius:15px;
-  color:$pink;
 }
 
-.banner-container{
+.subtype-activity {
+  margin-left: 1rem;
+  background-color: white;
+  border: 2px solid $pink;
+  border-radius: 15px;
+  color: $pink;
+}
+
+.banner-container {
   position: relative;
   height: 100%;
 }
 
-.flex-points{
+.flex-points {
   display: flex;
 
-  p{
-    margin-right:1rem;
+  p {
+    margin-right: 1rem;
   }
 
-  img{
-    height:30px;
-    width:30px;
-    transform: translate(0,-10px);
+  img {
+    height: 30px;
+    width: 30px;
+    transform: translate(0, -10px);
   }
 
-  .points{
-    margin-left:0.3rem;
-    font-size:2rem;
+  .points {
+    margin-left: 0.3rem;
+    font-size: 2rem;
   }
 }
 
-.event-organizer-info{
-  h5{
-    font-weight:normal;
+.event-organizer-info {
+  h5 {
+    font-weight: normal;
     font-size: 1.8rem;
   }
 
-  p{
+  p {
     text-transform: capitalize;
 
-    b{
-      font-size:1rem;
+    b {
+      font-size: 1rem;
     }
   }
 }
 
-.flex-banner-top,.flex-banner-bottom{
+.flex-banner-top,
+.flex-banner-bottom {
   position: absolute;
   display: flex;
-  width:100%;
+  width: 100%;
   justify-content: space-between;
 
-  .attendees-info,.event-info{
+  .attendees-info,
+  .event-info {
     color: white;
-    font-size:1.1rem;
+    font-size: 1.1rem;
   }
 }
 
-.flex-banner-top i{
-  padding-right:1rem;
+.flex-banner-top i {
+  padding-right: 1rem;
 }
-.flex-banner-bottom{
-  bottom:0;
+.flex-banner-bottom {
+  bottom: 0;
 }
 
-
-.white-card{
+.white-card {
   background-color: white;
-  padding:0.8rem 1.5rem;
-  border-radius:20px;
+  padding: 0.8rem 1.5rem;
+  border-radius: 20px;
 }
 
-.btn-cancel-wrapper{
-  padding:0.8rem;
-  color:white;
+.btn-cancel-wrapper {
+  padding: 0.8rem;
+  color: white;
   background-color: $purple;
   border-radius: 15px;
 
-  label{
-    padding:0 1rem;
+  label {
+    padding: 0 1rem;
     font-size: 1.2rem;
   }
 
-  .btn-cancel{
+  .btn-cancel {
     font-size: 1.1rem;
-    background-color:white;
+    background-color: white;
     border: none;
-    outline:none;
+    outline: none;
     border-radius: 15px;
-    color:$purple;
-    padding:0.5rem 1.2rem;
+    color: $purple;
+    padding: 0.5rem 1.2rem;
   }
 }
 
-
-.btn-attend{
+.btn-attend {
   border: none;
-  outline:none;
-  background-color:$pink;
-  color:white;
-  padding:0.7rem 2rem; 
-  border-radius:15px;
+  outline: none;
+  background-color: $pink;
+  color: white;
+  padding: 0.7rem 2rem;
+  border-radius: 15px;
   font-size: 1.2rem;
 }
 /*=====================================*/

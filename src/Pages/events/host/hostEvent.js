@@ -1,10 +1,11 @@
 import React, { Component } from "react";
+import EventType from "../../../components/events/host/EventType";
 
 class Host extends Component {
   render() {
     return (
       <>
-        <h1>HELLO LOTUS</h1>
+        <EventType />
       </>
     );
   }

@@ -1,6 +1,13 @@
 body {
   background-color: whitesmoke;
 }
+.btn-outline-primary {
+  margin-top: 1rem;
+  padding: 12px 35px;
+  font-size: 18px;
+  border-radius: 12px;
+}
+
 /*################ PROFILE HEADER STARTS ################*/
 .indv-profile-header,
 .ngo-profile-header,
@@ -10,10 +17,10 @@ body {
 .profile-jumbotron {
   margin-bottom: 0px !important;
   padding: 24px 32px;
-  background-color:white;
+  background-color: white;
 }
 .points {
-  font-size: 32px;
+  font-size: 4rem;
 }
 .h4-points {
   position: relative;
@@ -30,10 +37,16 @@ body {
   display: flex;
   height: 100%;
   align-items: center;
+  justify-content: space-between;
+  margin-left: 5rem;
+  width: 22vw;
 }
 .host-follow {
   text-align: center;
   padding: 10px;
+  h1 {
+    font-size: 4rem;
+  }
 }
 /*################ PROFILE HEADER ENDS ################*/
 

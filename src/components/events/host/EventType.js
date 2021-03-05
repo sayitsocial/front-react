@@ -19,24 +19,27 @@ class EventType extends Component {
           </Col>
           <Col md={2}></Col>
           <Col md={4} className='host-form-1'>
-            <h1>Choose Your Event Type</h1>
-            <input type='text' placeholder='Event Name' /> <br />
-            <label>
-              <input type='radio' />
-              In-Person
-            </label>
-            <h4>Event SubType</h4>
-            <select name='subtype'>
-              <option value='activity'>Activity</option>
-              <option value='get together'>Get Together</option>
-            </select>
-            <h4>Event Categories</h4>
-            <input type='text' placeholder='Eg. Environment' />
-            <br />
-            <hr />
-            <button value='Next' type='submit'>
-              Next
-            </button>
+            <h1 className='heading'>Choose Your Event Type</h1>
+            <div className='allinputs'>
+              <input id='eventname' type='text' placeholder='Event Name' />{" "}
+              <br />
+              <label id='button1'>
+                <input type='radio' />
+                In-Person
+              </label>
+              <h4 className='subtype'>Event SubType</h4>
+              <select className='dropdown1' name='subtype'>
+                <option value='activity'>Activity</option>
+                <option value='get together'>Get Together</option>
+              </select>
+              <h4 className='catagories'>Event Categories</h4>
+              <input id='describe' type='text' placeholder='Eg. Environment' />
+              <br />
+              <hr />
+              <button className='next' value='Next' type='submit'>
+                Next
+              </button>
+            </div>
           </Col>
         </Row>
       </>

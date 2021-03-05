@@ -5,10 +5,10 @@ import FormComponent from "../../components/register-login/form-login/FormCompon
 class LoginPage extends React.Component {
   render() {
     return (
-      <>
+      <div className='login-page'>
         <CornerAsthetics></CornerAsthetics>
         <FormComponent></FormComponent>
-      </>
+      </div>
     );
   }
 }

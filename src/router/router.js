@@ -8,6 +8,7 @@ import Footer from "../components/generic/Footer";
 import Event from "../Pages/event/Event";
 import Host from "../Pages/events/host/hostEvent";
 import Profile from "../Pages/profile/profile";
+import Landing from "../Pages/landing/Landing";
 
 function Routes() {
   const routesMain = [
@@ -39,10 +40,14 @@ function Routes() {
       path: "/profile",
       main: Profile,
     },
+    {
+      path: "/",
+      main: Landing,
+    },
   ];
 
   const routesNav = [
-    {
+    /*{
       path: ["/register", "/login"],
       exact: true,
       topbar: NavbarRegister,
@@ -50,11 +55,11 @@ function Routes() {
     {
       path: "/",
       topbar: Navbar,
-    },
+    },*/
   ];
 
   const routesFooter = [
-    {
+    /*{
       path: ["/register", "/login"],
       exact: true,
       footer: () => <> </>,
@@ -62,7 +67,7 @@ function Routes() {
     {
       path: "/",
       footer: Footer,
-    },
+    },*/
   ];
 
   return { routesMain, routesNav, routesFooter };

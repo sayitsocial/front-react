@@ -1,16 +1,16 @@
-import RegisterPage from "../Pages/register/registerPage";
-import LoginPage from "../Pages/login/login";
+import Event from "../Pages/event/Event";
 import EventsAttended from "../Pages/events/attended/eventsAttended";
 import EventsAttending from "../Pages/events/attending/eventsAttending";
+import Footer from "../components/generic/Footer";
+import Host from "../Pages/events/host/hostEvent";
+import Landing from "../Pages/landing/Landing";
+import LoginPage from "../Pages/login/login";
 import Navbar from "../components/generic/Navbar";
 import NavbarRegister from "../components/register-login/NavbarComponent";
-import Footer from "../components/generic/Footer";
-import Event from "../Pages/event/Event";
-import Host from "../Pages/events/host/hostEvent";
 import Profile from "../Pages/profile/profile";
-import Landing from "../Pages/landing/Landing";
+import RegisterPage from "../Pages/register/registerPage";
 
-function Routes() {
+function Routes () {
   const routesMain = [
     {
       path: "/register",
@@ -47,27 +47,27 @@ function Routes() {
   ];
 
   const routesNav = [
-    /*{
+    {
       path: ["/register", "/login"],
       exact: true,
       topbar: NavbarRegister,
     },
     {
-      path: "/",
+      path: ["/events", '/event', '/profile'],
       topbar: Navbar,
-    },*/
+    },
   ];
 
   const routesFooter = [
-    /*{
-      path: ["/register", "/login"],
+    {
+      path: ["/register", "/login",],
       exact: true,
       footer: () => <> </>,
     },
     {
-      path: "/",
+      path: ['/'],
       footer: Footer,
-    },*/
+    },
   ];
 
   return { routesMain, routesNav, routesFooter };

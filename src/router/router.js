@@ -8,6 +8,7 @@ import Footer from "../components/generic/Footer";
 import Event from "../Pages/event/Event";
 import Host from "../Pages/events/host/hostEvent";
 import Profile from "../Pages/profile/profile";
+import AboutUs from "../Pages/AboutUs/AboutUs";
 
 function Routes() {
   const routesMain = [
@@ -30,6 +31,10 @@ function Routes() {
     {
       path: "/event",
       main: Event,
+    },
+    {
+      path: "/about",
+      main: AboutUs,
     },
     {
       path: "/events/host",

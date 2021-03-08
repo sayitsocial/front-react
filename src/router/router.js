@@ -8,7 +8,11 @@ import LoginPage from "../Pages/login/login";
 import Navbar from "../components/generic/Navbar";
 import NavbarRegister from "../components/register-login/NavbarComponent";
 import Profile from "../Pages/profile/profile";
+<<<<<<< HEAD
 import RegisterPage from "../Pages/register/registerPage";
+=======
+import AboutUs from "../Pages/AboutUs/AboutUs";
+>>>>>>> 268bbeeec739c413c0bb3fd83301cc4494140c52
 
 function Routes () {
   const routesMain = [
@@ -31,6 +35,10 @@ function Routes () {
     {
       path: "/event",
       main: Event,
+    },
+    {
+      path: "/about",
+      main: AboutUs,
     },
     {
       path: "/events/host",

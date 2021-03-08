@@ -8,13 +8,10 @@ import LoginPage from "../Pages/login/login";
 import Navbar from "../components/generic/Navbar";
 import NavbarRegister from "../components/register-login/NavbarComponent";
 import Profile from "../Pages/profile/profile";
-<<<<<<< HEAD
-import AboutUs from "../Pages/AboutUs/AboutUs";
-=======
 import RegisterPage from "../Pages/register/registerPage";
->>>>>>> c67f3dccac1700669c34a71c1e3f39adc626ad38
+import AboutUs from "../Pages/AboutUs/AboutUs";
 
-function Routes () {
+function Routes() {
   const routesMain = [
     {
       path: "/register",
@@ -61,19 +58,19 @@ function Routes () {
       topbar: NavbarRegister,
     },
     {
-      path: ["/events", '/event', '/profile'],
+      path: ["/events", "/event", "/profile"],
       topbar: Navbar,
     },
   ];
 
   const routesFooter = [
     {
-      path: ["/register", "/login",],
+      path: ["/register", "/login"],
       exact: true,
       footer: () => <> </>,
     },
     {
-      path: ['/'],
+      path: ["/"],
       footer: Footer,
     },
   ];

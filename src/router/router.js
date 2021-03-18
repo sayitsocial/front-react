@@ -10,6 +10,7 @@ import NavbarRegister from "../components/register-login/NavbarComponent";
 import Profile from "../Pages/profile/profile";
 import RegisterPage from "../Pages/register/registerPage";
 import AboutUs from "../Pages/AboutUs/AboutUs";
+import Contact from "../Pages/contact/Contact";
 
 function Routes() {
   const routesMain = [
@@ -44,6 +45,10 @@ function Routes() {
     {
       path: "/profile",
       main: Profile,
+    },
+    {
+      path: "/contact",
+      main: Contact,
     },
     {
       path: "/",

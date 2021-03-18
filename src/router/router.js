@@ -63,7 +63,7 @@ function Routes() {
       topbar: NavbarRegister,
     },
     {
-      path: ["/events", "/event", "/profile"],
+      path: ["/events", "/event", "/profile", "/about", "/contact"],
       topbar: Navbar,
     },
   ];

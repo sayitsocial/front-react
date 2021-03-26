@@ -1,17 +1,16 @@
-import React from "react";
-import { withRouter } from "react-router-dom";
-import Routes from "./router/router";
 import { Route, Switch } from "react-router-dom";
+
+import React from "react";
+import Routes from "./router/router";
+import { withRouter } from "react-router-dom";
 
 const { routesMain, routesNav, routesFooter } = Routes();
 
 class App extends React.Component {
-  render() {
+  render () {
     return (
       <>
         <div
-          className='n
-        avbar'
         >
           <Switch>
             {routesNav.map((route) => (

@@ -160,31 +160,26 @@ export default class Landing extends Component {
                 <div className='category-img'>
                   <img src='' alt='' />
                 </div>
-                <h3>Donations</h3>
+                <h4>Donations</h4>
               </div>
               <div className='category-card'>
                 <div className='category-img'>
                   <img src='' alt='' />
                 </div>
-                <h3>Cleanliness</h3>
+                <h4>Cleanliness</h4>
               </div>
               <div className='category-card'>
                 <div className='category-img'>
                   <img src='' alt='' />
                 </div>
-                <h3>Blood Donations</h3>
+                <h4>Blood Donations</h4>
               </div>
+
               <div className='category-card'>
                 <div className='category-img'>
                   <img src='' alt='' />
                 </div>
-                <h3>Donations</h3>
-              </div>
-              <div className='category-card'>
-                <div className='category-img'>
-                  <img src='' alt='' />
-                </div>
-                <h3>Enivronment</h3>
+                <h4>Enivronment</h4>
               </div>
               <div className='category-card see-more'>
                 <a href=''>See More</a>

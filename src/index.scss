@@ -376,7 +376,11 @@ main {
     width: 100%;
 
     .attendees-cards {
-      display: flex;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      grid-auto-rows: auto;
+      grid-gap: 2rem;
+      margin-right: 2rem;
 
       .att-card {
         background-color: white;
@@ -427,9 +431,9 @@ main {
     .grid-cards {
       margin-top: 2rem;
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
       grid-auto-rows: auto;
-      grid-gap: 2rem;
+      grid-gap: 1rem;
       margin-right: 10rem;
 
       .category-card {
@@ -437,8 +441,11 @@ main {
         background-color: white;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
         border-radius: 20px;
-        padding: 2rem 1.5rem;
+        padding: 2rem;
         justify-content: center;
+        align-items: center;
+        width: 23vw;
+        height: 8vh;
       }
 
       .see-more {
@@ -446,7 +453,7 @@ main {
         color: white;
 
         a {
-          font-size: 1.8rem;
+          font-size: 1.2rem;
           color: white;
           text-decoration: underline;
         }

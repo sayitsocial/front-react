@@ -375,7 +375,7 @@ main {
 
     .attendees-cards {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
       grid-auto-rows: auto;
       grid-gap: 2rem;
       margin-right: 2rem;
@@ -429,21 +429,24 @@ main {
     .grid-cards {
       margin-top: 2rem;
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
       grid-auto-rows: auto;
-      grid-gap: 1rem;
+      grid-gap: 1.5rem;
       margin-right: 10rem;
 
       .category-card {
         display: flex;
         background-color: white;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-        border-radius: 20px;
-        padding: 2rem;
         justify-content: center;
         align-items: center;
-        width: 23vw;
+        border-radius: 8px;
         height: 8vh;
+
+        p {
+          font-size: 1.3rem;
+          margin: 0;
+        }
       }
 
       .see-more {

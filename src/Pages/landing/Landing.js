@@ -4,7 +4,7 @@ import LocationOnOutlinedIcon from "@material-ui/icons/LocationOnOutlined";
 import SearchIcon from "@material-ui/icons/Search";
 
 export default class Landing extends Component {
-  render () {
+  render() {
     return (
       <>
         <img
@@ -160,26 +160,26 @@ export default class Landing extends Component {
                 <div className='category-img'>
                   <img src='' alt='' />
                 </div>
-                <h4>Donations</h4>
+                <p>Donations</p>
               </div>
               <div className='category-card'>
                 <div className='category-img'>
                   <img src='' alt='' />
                 </div>
-                <h4>Cleanliness</h4>
+                <p>Cleanliness</p>
               </div>
               <div className='category-card'>
                 <div className='category-img'>
                   <img src='' alt='' />
                 </div>
-                <h4>Blood Donations</h4>
+                <p>Blood Donations</p>
               </div>
 
               <div className='category-card'>
                 <div className='category-img'>
                   <img src='' alt='' />
                 </div>
-                <h4>Enivronment</h4>
+                <p>Enivronment</p>
               </div>
               <div className='category-card see-more'>
                 <a href=''>See More</a>

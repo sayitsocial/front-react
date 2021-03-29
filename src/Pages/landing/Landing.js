@@ -1,10 +1,10 @@
 import React, { Component } from "react";
+
 import LocationOnOutlinedIcon from "@material-ui/icons/LocationOnOutlined";
 import SearchIcon from "@material-ui/icons/Search";
-import { Public } from "@material-ui/icons";
 
 export default class Landing extends Component {
-  render() {
+  render () {
     return (
       <>
         <img

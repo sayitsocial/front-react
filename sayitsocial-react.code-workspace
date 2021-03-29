@@ -26,7 +26,9 @@
 			"formulahendry.auto-close-tag",
 			"dbaeumer.vscode-eslint",
 			"wayou.vscode-todo-highlight",
-			"stylelint.vscode-stylelint"
+			"stylelint.vscode-stylelint",
+			"gruntfuggly.todo-tree"
+
 		]
 	}
 }

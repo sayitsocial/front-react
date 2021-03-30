@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-
 import LocationOnOutlinedIcon from "@material-ui/icons/LocationOnOutlined";
 import { Public } from "@material-ui/icons";
 import SearchIcon from "@material-ui/icons/Search";

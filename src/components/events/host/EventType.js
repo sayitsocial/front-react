@@ -23,9 +23,9 @@ class EventType extends Component {
             <div className='allinputs'>
               <input id='eventname' type='text' placeholder='Event Name' />{" "}
               <br />
-              <label id='button1'>
+              <label id='button1' className='mb-4'>
                 <input type='radio' />
-                In-Person
+                <span className='ml-3'>In Person</span>
               </label>
               <h4 className='subtype'>Event SubType</h4>
               <select className='dropdown1' name='subtype'>
@@ -36,7 +36,11 @@ class EventType extends Component {
               <input id='describe' type='text' placeholder='Eg. Environment' />
               <br />
               <hr />
-              <button className='next' value='Next' type='submit'>
+              <button
+                className='next btn btn-danger'
+                value='Next'
+                type='submit'
+              >
                 Next
               </button>
             </div>

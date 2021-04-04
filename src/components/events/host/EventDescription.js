@@ -2,57 +2,94 @@ import React, { Component } from "react";
 import {
   Badge,
   Button,
+  Col,
   Dropdown,
   DropdownButton,
   FormControl,
   Image,
   InputGroup,
+  Row,
 } from "react-bootstrap";
+import "./EventsHost.scss";
 
 class EventDescription extends Component {
   render() {
     return (
       <>
-        <div>
-          <img
-            src={process.env.PUBLIC_URL + "/register/about-you-model.png"}
-            alt=''
-          />
-        </div>
-        <div>
-          <h2>Event Description</h2>
-          <textarea placeholder='description'></textarea>
-          <h6>Contact Information</h6>
-          <div>
-            <InputGroup className='mb-3'>
-              <DropdownButton
-                as={InputGroup.Prepend}
-                variant='primary'
-                title='+91 IND'
-                id='input-group-dropdown-1'
-              >
-                <Dropdown.Item href='#'>India</Dropdown.Item>
-                <Dropdown.Item href='#'>Australia</Dropdown.Item>
-                <Dropdown.Item href='#'>Spain</Dropdown.Item>
-                <Dropdown.Item href='#'>Germany</Dropdown.Item>
-              </DropdownButton>
-              <FormControl aria-describedby='basic-addon1' />
-            </InputGroup>
-          </div>
-          <div>
-            <h6>Virtual Points</h6>
-            <Badge variant='dark'>
-              <Image src={process.env.PUBLIC_URL + "/profile/medal.svg"} />
-              150
-            </Badge>
-          </div>
-          <br />
-          <hr />
-          <div>
-            <Button variant='outline-danger'>Back</Button>
-            <Button variant='danger'>Next</Button>
-          </div>
-        </div>
+        <Row style={{ marginTop: "2rem" }}>
+          <Col md={6}>
+            <Image
+              className='description-img'
+              src={process.env.PUBLIC_URL + "/register/about-you-model.png"}
+              alt=''
+              fluid
+            />
+          </Col>
+          <Col md={1}></Col>
+          <Col md={4} className='host-form-1'>
+            <div>
+              <h2 className='heading-2 mb-5'>Event Description</h2>
+              <textarea
+                className='p-2 description'
+                placeholder='Description'
+                rows='5'
+                cols='39'
+              ></textarea>
+
+              <div className='d-flex'>
+                <div>
+                  <h5 className='mt-4 mb-3'>Contact Information</h5>
+                  <InputGroup className='mb-3 number'>
+                    <DropdownButton
+                      as={InputGroup.Prepend}
+                      title='+91 IND'
+                      variant='dark'
+                      id='input-group-dropdown-1'
+                    >
+                      <Dropdown.Item href='#'>India</Dropdown.Item>
+                      <Dropdown.Item href='#'>Australia</Dropdown.Item>
+                      <Dropdown.Item href='#'>Spain</Dropdown.Item>
+                      <Dropdown.Item href='#'>Germany</Dropdown.Item>
+                    </DropdownButton>
+                    <FormControl
+                      className='number'
+                      aria-describedby='basic-addon1'
+                    />
+                  </InputGroup>
+                </div>
+                <div className='mt-4 '>
+                  <h5 className='mb-3'> Points</h5>
+                  <div className='bg-dark d-flex v-pts'>
+                    <Image
+                      src={process.env.PUBLIC_URL + "/profile/medal.svg"}
+                    />
+                    <span className='align-self-center ml-1'>150</span>
+                  </div>
+                </div>
+              </div>
+
+              <br />
+              <hr />
+              <div className='d-flex justify-content-between'>
+                <button
+                  className='btn bg-light back btn-light'
+                  value='Back'
+                  type='submit'
+                >
+                  Back
+                </button>
+                <button
+                  className='next btn btn-danger'
+                  value='Next'
+                  type='submit'
+                >
+                  Next
+                </button>
+              </div>
+            </div>
+          </Col>
+          <Col md={1}></Col>
+        </Row>
       </>
     );
   }

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Col, Image, Row } from "react-bootstrap";
-import "./EventType.scss";
+import "./EventsHost.scss";
 
 class EventType extends Component {
   render() {

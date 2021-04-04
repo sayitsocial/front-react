@@ -15,11 +15,15 @@ input[type="text"] {
 .heading {
   margin-top: 7rem;
   color: black;
-  letter-spacing: 2px;
-  font-family: sans-serif;
+  letter-spacing: 1.5px;
   font-size: 40px;
 }
-
+.heading-2 {
+  margin-top: 4.25rem;
+  color: black;
+  letter-spacing: 1.5px;
+  font-size: 40px;
+}
 .subtype,
 .catagories {
   font-size: 16px;
@@ -66,4 +70,30 @@ input[type="text"] {
   left: 300px;
   height: 2.8rem;
   width: 20%;
+}
+.back {
+  height: 2.8rem;
+  width: 20%;
+}
+.description {
+  outline: none !important;
+  border: 2px solid #b19be4;
+  border-radius: 10px;
+}
+.description-img,
+.upload-img {
+  width: 115rem;
+  position: relative;
+  top: -2rem;
+}
+.v-pts {
+  color: whitesmoke;
+  height: 2.5rem;
+  width: 5.5rem;
+  padding: 0.35rem;
+  border-radius: 10px;
+}
+.number {
+  width: 17.25rem;
+  margin-right: 1rem;
 }

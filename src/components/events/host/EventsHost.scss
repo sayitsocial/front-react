@@ -71,6 +71,7 @@ input[type="text"] {
   height: 2.8rem;
   width: 20%;
 }
+
 .back {
   height: 2.8rem;
   width: 20%;
@@ -96,4 +97,29 @@ input[type="text"] {
 .number {
   width: 17.25rem;
   margin-right: 1rem;
+}
+.uploadImage {
+  box-sizing: border-box;
+  border: 2px solid #b19be4;
+  border-radius: 12px;
+  outline: none;
+  padding: 20px;
+  width: 24rem;
+}
+#upload-image {
+  border: none;
+  outline: none;
+  // height: 10rem;
+  width: max-content;
+  // display: none;
+}
+.img-heading {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+.upload-thumbnail {
+  height: 6.5rem;
+}
+.main-upload {
+  margin: 0 auto;
 }

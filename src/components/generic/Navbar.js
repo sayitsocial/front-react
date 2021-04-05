@@ -1,6 +1,8 @@
-import React from "react";
-import { Col, Navbar as BSNavbar, Form, Nav } from "react-bootstrap";
 import "./generic.scss";
+
+import { Navbar as BSNavbar, Col, Form, Nav } from "react-bootstrap";
+
+import React from "react";
 
 class Navbar extends React.Component {
   constructor(props) {
@@ -31,10 +33,10 @@ class Navbar extends React.Component {
       ],
     };
   }
-  render() {
+  render () {
     return (
       <>
-        <BSNavbar expand='lg' className='row main-navbar'>
+        <BSNavbar expand='lg' className='row main-navbar w-100'>
           <Col md={3}>
             <BSNavbar.Brand
               href='#'

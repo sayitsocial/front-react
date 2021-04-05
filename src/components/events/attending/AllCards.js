@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import EventCard from "./eventCard";
 import { Row } from "react-bootstrap";
 import Axios from "axios";
+import AttendingCard from './attendingCard'
 import { populateUrl } from "../../../constants";
 
 class AllCards extends Component {
@@ -13,9 +13,9 @@ class AllCards extends Component {
     };
   }
   async componentDidMount () {
-    const res = await Axios.get(populateUrl("/api/event/attendee"), {
+    const res = await Axios.get(populateUrl("/api/event/get/all"), {
       // TODO: Store volunteer id somewhere in client
-      params: { volunteer_id: 1 },
+      params: {},
     });
     if (res.data.length > 0) {
       this.setState({ events: res.data });
@@ -24,14 +24,9 @@ class AllCards extends Component {
 
   render () {
     return (
-      <Row className='row-of-card'>
+      <Row className='mx-4'>
         {this.state.events.map((value, index) => (
-          <EventCard
-            title={value.event.name}
-            desc={value.event.description}
-            date={value.event.start_time}
-            key={index}
-          />
+          <AttendingCard title={value.name} />
         ))}
       </Row>
     );

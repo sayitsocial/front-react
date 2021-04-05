@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import {
-  Badge,
-  Button,
   Col,
   Dropdown,
   DropdownButton,

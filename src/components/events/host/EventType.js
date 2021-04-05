@@ -19,7 +19,7 @@ class EventType extends Component {
           </Col>
           <Col md={2}></Col>
           <Col md={4} className='host-form-1'>
-            <h1 className='heading'>Choose Your Event Type</h1>
+            <h1 className='heading'>Choose Event Type</h1>
             <div className='allinputs'>
               <input id='eventname' type='text' placeholder='Event Name' />{" "}
               <br />

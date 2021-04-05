@@ -7,8 +7,8 @@ class Host extends Component {
   render() {
     return (
       <>
-        {/* <EventType /> */}
-        {/* <EventDescription /> */}
+        <EventType />
+        <EventDescription />
         <UploadImage />
       </>
     );

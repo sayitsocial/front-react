@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-
 import LocationOnOutlinedIcon from "@material-ui/icons/LocationOnOutlined";
 import SearchIcon from "@material-ui/icons/Search";
 import EventCard from "../../components/events/attended/eventCard";

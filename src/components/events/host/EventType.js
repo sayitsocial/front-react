@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Col, Image, Row } from "react-bootstrap";
-import "./EventType.scss";
+import "./EventsHost.scss";
 
 class EventType extends Component {
   render() {
@@ -19,13 +19,13 @@ class EventType extends Component {
           </Col>
           <Col md={2}></Col>
           <Col md={4} className='host-form-1'>
-            <h1 className='heading'>Choose Your Event Type</h1>
+            <h1 className='heading'>Choose Event Type</h1>
             <div className='allinputs'>
               <input id='eventname' type='text' placeholder='Event Name' />{" "}
               <br />
-              <label id='button1'>
+              <label id='button1' className='mb-4'>
                 <input type='radio' />
-                In-Person
+                <span className='ml-3'>In Person</span>
               </label>
               <h4 className='subtype'>Event SubType</h4>
               <select className='dropdown1' name='subtype'>
@@ -36,7 +36,11 @@ class EventType extends Component {
               <input id='describe' type='text' placeholder='Eg. Environment' />
               <br />
               <hr />
-              <button className='next' value='Next' type='submit'>
+              <button
+                className='next btn btn-danger'
+                value='Next'
+                type='submit'
+              >
                 Next
               </button>
             </div>

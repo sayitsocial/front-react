@@ -7,11 +7,11 @@ class ContactHeader extends Component {
       <>
         <div className='contact-header'>
           <h1> Get in touch </h1>
-          <p>
+          <h5 className='mt-4'>
             We would love to hear from you, suggestions, feedbacks or anything.
             <br />
             Drop us a message and we will connect with you
-          </p>
+          </h5>
         </div>
       </>
     );

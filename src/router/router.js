@@ -12,7 +12,7 @@ import RegisterPage from "../Pages/register/registerPage";
 import AboutUs from "../Pages/AboutUs/AboutUs";
 import Contact from "../Pages/contact/Contact";
 
-function Routes() {
+function Routes () {
   const routesMain = [
     {
       path: "/register",
@@ -31,7 +31,7 @@ function Routes() {
       main: LoginPage,
     },
     {
-      path: "/event",
+      path: "/event/:id",
       main: Event,
     },
     {

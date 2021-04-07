@@ -13,20 +13,29 @@ class AllCards extends Component {
     };
   }
   async componentDidMount () {
-    const res = await Axios.get(populateUrl("/api/event/get/all"), {
-      // TODO: Store volunteer id somewhere in client
-      params: {},
-    });
+    const res = await Axios.get(populateUrl("/api/event/get/all"));
     if (res.data.length > 0) {
       this.setState({ events: res.data });
     }
+  }
+
+  getDate (timestamp) {
+    var d = new Date(timestamp * 1000);
+    let hrs = d.getHours()
+    let mins = d.getMinutes()
+    if (hrs <= 9)
+      hrs = '0' + hrs
+    if (mins < 10)
+      mins = '0' + mins
+    const postTime = hrs + ':' + mins
+    return [d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear() + ' ' + postTime]
   }
 
   render () {
     return (
       <Row className='mx-4'>
         {this.state.events.map((value, index) => (
-          <AttendingCard title={value.name} />
+          <AttendingCard key={index} title={value.name} date={this.getDate(value.start_time)} />
         ))}
       </Row>
     );

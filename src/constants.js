@@ -1,6 +1,6 @@
 const BASE_PROTOCOL = "http://";
-const BASE_URL = "localhost:8000";
+const DEV_URL = "dev.sayitsocial.in:9001";
 
-export function populateUrl(path) {
-  return BASE_PROTOCOL + BASE_URL + path;
+export function populateUrl (path) {
+  return BASE_PROTOCOL + DEV_URL + path;
 }

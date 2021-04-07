@@ -13,7 +13,7 @@ class AttendingCard extends Component {
             />
             <Card.ImgOverlay className='d-flex justify-content-between '>
               <Card.Title>
-                {this.props.title} 23 Aug 2020 <br /> 10pm
+                {this.props.title} {this.props.date} <br />
               </Card.Title>
               <Card.Title>{this.props.attendees_count}</Card.Title>
             </Card.ImgOverlay>

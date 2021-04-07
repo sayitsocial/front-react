@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-
 import LocationOnOutlinedIcon from "@material-ui/icons/LocationOnOutlined";
 import SearchIcon from "@material-ui/icons/Search";
+import EventCard from "../../components/events/attended/eventCard";
 
 export default class Landing extends Component {
-  render () {
+  render() {
     return (
       <>
         <img
@@ -62,8 +62,36 @@ export default class Landing extends Component {
             </div>
           </section>
 
+          <section className='attend-events-near-you'>
+            <h1>Attend Events Near You</h1>
+            <div className='event-attend-cards'>
+              <EventCard
+                title='Data Science Meetup'
+                date={"Mon, Aug 17 , 8.00 PM "}
+                desc='Live and Interactive Practical Training on Job
+in IT Industry'
+                footer_title='Big Events Pvt. Ltd.'
+              />
+              <EventCard
+                title='Data Science Meetup'
+                date={"Mon, Aug 17 , 8.00 PM "}
+                desc='Live and Interactive Practical Training on Job
+in IT Industry'
+                footer_title='Big Events Pvt. Ltd.'
+              />
+              <EventCard
+                title='Data Science Meetup'
+                date={"Mon, Aug 17 , 8.00 PM "}
+                desc='Live and Interactive Practical Training on Job
+in IT Industry'
+                footer_title='Big Events Pvt. Ltd.'
+              />
+            </div>
+            <a href=''>See More</a>
+          </section>
+
           <section className='host-event'>
-            <h2>Host events as </h2>
+            <h1>Host events as </h1>
             <div className='host-event--cards'>
               <div className='event-card'>
                 <div className='soon'>Available</div>
@@ -160,31 +188,26 @@ export default class Landing extends Component {
                 <div className='category-img'>
                   <img src='' alt='' />
                 </div>
-                <h3>Donations</h3>
+                <p>Donations</p>
               </div>
               <div className='category-card'>
                 <div className='category-img'>
                   <img src='' alt='' />
                 </div>
-                <h3>Cleanliness</h3>
+                <p>Cleanliness</p>
               </div>
               <div className='category-card'>
                 <div className='category-img'>
                   <img src='' alt='' />
                 </div>
-                <h3>Blood Donations</h3>
+                <p>Blood Donations</p>
               </div>
+
               <div className='category-card'>
                 <div className='category-img'>
                   <img src='' alt='' />
                 </div>
-                <h3>Donations</h3>
-              </div>
-              <div className='category-card'>
-                <div className='category-img'>
-                  <img src='' alt='' />
-                </div>
-                <h3>Enivronment</h3>
+                <p>Enivronment</p>
               </div>
               <div className='category-card see-more'>
                 <a href=''>See More</a>

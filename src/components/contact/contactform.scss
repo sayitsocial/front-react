@@ -1,0 +1,25 @@
+.contact-main {
+  display: grid;
+  color: white;
+}
+
+.form {
+  grid-column: 1 / span 4;
+  width: 79%;
+  margin-top: 15px;
+  // row-gap: 15px;
+}
+
+.abc {
+  border-radius: 20px;
+}
+
+.details {
+  grid-column: 5 / span 3;
+}
+
+.lady {
+  position: relative;
+  bottom: 400px;
+  grid-column: 8 / span 5;
+}

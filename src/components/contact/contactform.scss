@@ -23,3 +23,19 @@
   bottom: 400px;
   grid-column: 8 / span 5;
 }
+.contact-icons {
+  height: 1.75rem;
+}
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 300px;
+  width: 100%;
+  padding: 0 4rem;
+}
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 300px;
+  width: 100%;
+}

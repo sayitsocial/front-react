@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Form } from "react-bootstrap";
+import { Form, Image } from "react-bootstrap";
 import "./contactform.scss";
 
 class ContactForm extends Component {
@@ -10,10 +10,10 @@ class ContactForm extends Component {
           <h2>Write to us, </h2>
           <div className='form'>
             <Form className='form'>
-              <Form.Group className='abc'>
+              <Form.Group className='abc mb-4'>
                 <Form.Control size='lg' type='text' placeholder='Full name' />
               </Form.Group>
-              <Form.Group className='abc'>
+              <Form.Group className='abc mb-4'>
                 <Form.Control
                   controlId='formBasicEmail'
                   size='lg'
@@ -21,8 +21,8 @@ class ContactForm extends Component {
                   placeholder='Email'
                 />
               </Form.Group>
-              <Form.Group className='abc'>
-                <Form.Control size='lg' type='number' placeholder='Phone' />
+              <Form.Group className='abc mb-4'>
+                <Form.Control size='lg' type='text' placeholder='Phone' />
               </Form.Group>
               <Form.Group
                 controlId='exampleForm.ControlTextarea1'
@@ -49,7 +49,20 @@ class ContactForm extends Component {
             </div>
             <div>
               <h3> Follow us on </h3>
-              <h4> </h4>
+              <div className='d-flex mt-3'>
+                <Image
+                  className='contact-icons mr-3'
+                  src={process.env.PUBLIC_URL + "/contact/linkedin.svg"}
+                />
+                <Image
+                  className='contact-icons mr-3'
+                  src={process.env.PUBLIC_URL + "/contact/instagram.svg"}
+                />
+                <Image
+                  className='contact-icons mr-3'
+                  src={process.env.PUBLIC_URL + "/contact/facebook.svg"}
+                />
+              </div>
             </div>
           </div>
           <div className='lady'>

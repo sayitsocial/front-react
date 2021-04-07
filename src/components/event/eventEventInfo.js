@@ -8,20 +8,14 @@ class AttendEventInfo extends React.Component {
                 <div className="jumbotron banner-info  mt-5">
                     <div className="row">
                         <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-auto">
-                            <h1>Webinar: E-waste Management</h1>
-                            <Link to="#">Category: Donations</Link>
+                            <h1>{this.props.event_name}</h1>
+                            <Link to="#">Category: {this.props.category_name}</Link>
                             <button type="button" className="subtype-activity btn btn-outline-danger">
                                 Subtype :Activity
                             </button>
                             <br /><br />
                             <p>
-                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                                nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-                                erat, sed diam voluptua. At vero eos et accusam et justo duo
-                                dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-                                sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-                                amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                                invidunt ut labore et dolore magna
+                                {this.props.event_desc}
                             </p>
                         </div>
                         <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-auto">
@@ -32,8 +26,8 @@ class AttendEventInfo extends React.Component {
                                     </div>
                                 </div>
                                 <div className="event-organizer-info col-xl-6 col-lg-6 col-md-12 col-sm-12 col-auto">
-                                    <h5>Organised by <br /><strong>Child in Need Institute</strong></h5>
-                                    <p>contact +123 123 1233</p>
+                                    <h5>Organised by <br /><strong>{this.props.organiser_name}</strong></h5>
+                                    <p>contact {this.props.organizer_contact_phone}</p>
                                     <span className="flex-points">
                                         <p>Value points</p>
                                         <p>

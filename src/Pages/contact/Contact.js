@@ -18,21 +18,16 @@ class Contact extends Component {
           <div class='mapouter'>
             <div class='gmap_canvas'>
               <iframe
-                title="map"
+                title='map'
                 width='100%'
-                height='300'
+                height='350'
                 id='gmap_canvas'
-                src='https://maps.google.com/maps?q=sinhagad%20road,%20pune&t=&z=13&ie=UTF8&iwloc=&output=embed'
-                frameborder='1.5'
+                src='https://maps.google.com/maps?q=suncity%20road,%20sinhagad%20road&t=&z=13&ie=UTF8&iwloc=&output=embed'
+                frameborder='0'
                 scrolling='yes'
-                marginheight='0.5'
-                marginwidth='0.5'
+                marginheight='0'
+                marginwidth='0'
               ></iframe>
-              {/* <a href='https://www.whatismyip-address.com'></a> */}
-              <br />
-              <a href='https://www.embedgooglemap.net'>
-                embed google map into website
-              </a>
             </div>
           </div>
         </div>

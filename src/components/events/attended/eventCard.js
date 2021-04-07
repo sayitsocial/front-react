@@ -5,9 +5,10 @@ import { Link } from "react-router-dom";
 class EventCard extends Component {
   render () {
     return (
-      <Col md={4}>
+      <Col md={3}>
         <Card className='card-shadow'>
           <Card.Img
+            className='card-img'
             variant='top'
             src='https://picsum.photos/id/1005/300/200'
             alt='card caption'
@@ -15,8 +16,8 @@ class EventCard extends Component {
           <div className='d-flex card-img-overlay'>
             <span className='badge badge-warning'>In-Person</span>
           </div>
-          <Card.Body className='zindex-top'>
-            <Card.Title>
+          <Card.Body className='zindex-top card-body'>
+            <Card.Title className='blue-text'>
               {this.props.title} <br />
               <span>
                 <small>{this.props.date}</small>
@@ -24,13 +25,13 @@ class EventCard extends Component {
             </Card.Title>
             <Card.Text>{this.props.desc}</Card.Text>
           </Card.Body>
-          <Card.Footer className='zindex-top'>
+          <Card.Footer className='zindex-top card-footer'>
             <h6>{this.props.footer_title}</h6>
             <p className='d-flex user'>
               <img
                 className='rounded-circle'
-                width='30'
-                height='30'
+                width='25'
+                height='25'
                 src='http://jlantunez.com/imgs/avatar.jpg'
                 alt='Avatar'
               />

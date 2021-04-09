@@ -9,7 +9,10 @@ class TeamCard extends Component {
         <h5>Gresham Nelson</h5>
         <div className='card-bottom'>
           <h6 className='role'>CEO- founder</h6>
-          <Image src={process.env.PUBLIC_URL + "/register/linkedin.svg"} />
+          <Image
+            style={{ height: "1.15rem" }}
+            src={process.env.PUBLIC_URL + "/contact/blue-linkedin.svg"}
+          />
         </div>
       </>
     );

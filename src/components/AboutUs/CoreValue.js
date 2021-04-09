@@ -8,23 +8,24 @@ class CoreValue extends Component {
         <div>
           <h3 className='goal'>Our current goal is to become</h3>
           <h3 className='platform'>
-            <span className="color-blue">#1 event management platform </span>  in the world by <span className="color-pink">2030</span> 
+            <span className='color-blue'>#1 event management platform </span> in
+            the world by <span className='color-pink'>2030</span>
           </h3>
         </div>
         <h3 className='core'>Our Core Values</h3>
         <Row className='corevalue-row'>
           <Col>
-            <img src='https://picsum.photos/70/80' alt='' />
+            <img src='https://picsum.photos/70/80' alt='' className='image' />
             <br />
             <h8> User-Delightment </h8>
           </Col>
-          <Col >
-            <img src='https://picsum.photos/70/80' alt='' />
+          <Col>
+            <img src='https://picsum.photos/70/80' alt='' className='image' />
             <br />
-            <h8>Team Member Upliftment</h8>
+            <h8> Team Member Upliftment</h8>
           </Col>
           <Col>
-            <img src='https://picsum.photos/70/80' alt='' />
+            <img src='https://picsum.photos/70/80' alt='' className='image' />
             <br />
             <h8>Value for Profit</h8>
           </Col>

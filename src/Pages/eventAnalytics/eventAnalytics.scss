@@ -1,0 +1,55 @@
+.header {
+  margin: 2rem 5rem;
+}
+
+.event-analytics--main {
+  margin: 0 5rem;
+  display: flex;
+
+  .sidebar {
+    width: 22vw;
+  }
+
+  .main-content {
+    width: 100%;
+
+    .people-cards {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .card {
+        width: 25%;
+        display: flex;
+        margin-right: 1rem;
+        border-radius: 12px;
+        outline: none;
+        border: none;
+        align-items: center;
+        padding: 1.5rem 0;
+
+        p {
+          font-size: 2rem;
+        }
+      }
+    }
+
+    .age-chart,
+    .location-list,
+    .retention,
+    .ux-chart {
+      margin: 2rem 7rem;
+      background-color: white;
+      height: 60vh;
+      border-radius: 12px;
+
+      h2 {
+        padding: 2rem;
+      }
+
+      .chart-container {
+        height: 90%;
+      }
+    }
+  }
+}

@@ -11,6 +11,7 @@ import Profile from "../Pages/profile/profile";
 import RegisterPage from "../Pages/register/registerPage";
 import AboutUs from "../Pages/AboutUs/AboutUs";
 import Contact from "../Pages/contact/Contact";
+import EventAnalytics from "../Pages/eventAnalytics/EventAnalytics";
 
 function Routes() {
   const routesMain = [
@@ -33,6 +34,10 @@ function Routes() {
     {
       path: "/event",
       main: Event,
+    },
+    {
+      path: "/event-analytics",
+      main: EventAnalytics,
     },
     {
       path: "/about",
@@ -63,7 +68,14 @@ function Routes() {
       topbar: NavbarRegister,
     },
     {
-      path: ["/events", "/event", "/profile", "/about", "/contact"],
+      path: [
+        "/events",
+        "/event",
+        "/profile",
+        "/about",
+        "/contact",
+        "/event-analytics",
+      ],
       topbar: Navbar,
     },
   ];

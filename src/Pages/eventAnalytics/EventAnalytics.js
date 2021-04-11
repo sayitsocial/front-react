@@ -3,7 +3,7 @@ import "./eventAnalytics.scss";
 import PieChart from "../../components/eventAnalytics/PieChart";
 
 class EventAnalytics extends React.Component {
-  render() {
+  render () {
     return (
       <>
         <h2 className='header'>Event Analytics</h2>
@@ -23,7 +23,9 @@ class EventAnalytics extends React.Component {
 
             <div className='age-chart'>
               <h2>Age Chart</h2>
-              <div className='chart-container'></div>
+              <div className='chart-container'>
+                <PieChart />
+              </div>
             </div>
 
             <div className='location-list'>

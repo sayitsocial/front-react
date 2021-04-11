@@ -3,6 +3,7 @@ import {
   Col,
   Dropdown,
   DropdownButton,
+  Form,
   FormControl,
   Image,
   InputGroup,
@@ -63,9 +64,13 @@ class EventDescription extends Component {
                     />
                     <span className='align-self-center ml-1'>150</span>
                   </div>
+                  {/* <FormControl
+                    className='pts'
+                    id='virtualPoints'
+                    type='number'
+                  /> */}
                 </div>
               </div>
-
               <br />
               <hr />
               <div className='d-flex justify-content-between'>

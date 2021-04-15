@@ -40,7 +40,7 @@
 #org-card-group {
   margin-top: 2rem;
   margin-left: -3rem;
-  width: 70% !important;
+  width: 85% !important;
 }
 
 .type-card {
@@ -71,11 +71,11 @@
 }
 
 .navigation-button-group {
-  margin-right: 20rem;
+  margin-right: 14rem;
 }
 
 #second-form-group {
-  margin-right: 20rem;
+  margin-right: 14rem;
 }
 
 #second-form-group input,
@@ -85,6 +85,7 @@
   padding: 8px;
   border: 1px solid #723fec;
   font-size: 16px;
+  width: 100%;
 }
 
 #formLoginEmail,
@@ -97,7 +98,7 @@
 }
 
 .password-container {
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 .login-submit {

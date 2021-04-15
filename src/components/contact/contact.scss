@@ -13,20 +13,12 @@
 .item2 {
   grid-row: 5 / span 8;
   background: #834ce6;
-  background: -webkit-linear-gradient(top, #834ce6, #2bd59f);
-  background: -moz-linear-gradient(top, #834ce6, #2bd59f);
-  background: linear-gradient(to bottom, #834ce6, #2bd59f);
+  background-color: #3787f6;
+  background-image: linear-gradient(315deg, #3787f6 0%, #733fed 74%);
   padding-top: 4%;
   padding-left: 5%;
 }
 
-// .item3 {
-//   grid-row: 5 / span 8;
-//   background-color: white;
-// }
-
 .contact-header {
-  // display: grid;
-  // margin: auto;
   background-color: white;
 }

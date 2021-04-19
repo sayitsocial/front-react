@@ -1,41 +1,26 @@
 .contact-main {
   display: grid;
   color: white;
+  height: 550px;
 }
 
 .form {
-  grid-column: 1 / span 4;
-  width: 79%;
-  margin-top: 15px;
-  // row-gap: 15px;
-}
-
-.abc {
-  border-radius: 20px;
+  grid-column: 1 / 5;
 }
 
 .details {
-  grid-column: 5 / span 3;
+  grid-column: 8 / 9;
 }
 
 .lady {
   position: relative;
   bottom: 400px;
-  grid-column: 8 / span 5;
+  grid-column: 10 / 12;
 }
 .contact-icons {
   height: 1.75rem;
 }
-.mapouter {
-  position: relative;
-  text-align: right;
-  height: 350px;
-  width: 100%;
-  padding: 0 4rem;
-}
-.gmap_canvas {
-  overflow: hidden;
-  background: none !important;
-  height: 350px;
-  width: 100%;
+
+Button {
+  width: 8rem;
 }

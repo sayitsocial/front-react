@@ -4,21 +4,42 @@
 
 .item1 {
   background-color: white;
-  grid-row: 1 / span 4;
-  padding-top: 60px;
-  padding-left: 80px;
-  padding-bottom: 50px;
+  grid-row: 1 / 5;
+  grid-column: 1 / 12;
+  padding: 50px 60px;
 }
 
 .item2 {
-  grid-row: 5 / span 8;
+  grid-row: 5 / 8;
+  grid-column: 1 / 12;
   background: #834ce6;
   background-color: #3787f6;
   background-image: linear-gradient(315deg, #3787f6 0%, #733fed 74%);
-  padding-top: 4%;
-  padding-left: 5%;
+  padding-top: 60px;
+  padding-left: 80px;
+}
+
+.item3 {
+  background-color: white;
+  grid-row: 8 / 12;
+  grid-column: 1 / 12;
 }
 
 .contact-header {
   background-color: white;
+  padding: 0px 20px;
+}
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 350px;
+  width: 100%;
+  padding: 0rem 4rem;
+}
+.gmap_canvas {
+  overflow: hidden;
+  background: white !important;
+  height: 350px;
+  width: 100%;
 }

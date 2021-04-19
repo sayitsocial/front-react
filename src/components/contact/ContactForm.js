@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Form, Image } from "react-bootstrap";
+import { Form, Image, Button } from "react-bootstrap";
 import "./contactform.scss";
 
 class ContactForm extends Component {
@@ -8,12 +8,12 @@ class ContactForm extends Component {
       <>
         <div className='contact-main'>
           <h2>Write to us, </h2>
-          <div className='form'>
+          <div className='form mt-3'>
             <Form className='form'>
-              <Form.Group className='abc mb-4'>
+              <Form.Group className='mb-4'>
                 <Form.Control size='lg' type='text' placeholder='Full name' />
               </Form.Group>
-              <Form.Group className='abc mb-4'>
+              <Form.Group className='mb-4'>
                 <Form.Control
                   controlId='formBasicEmail'
                   size='lg'
@@ -21,19 +21,20 @@ class ContactForm extends Component {
                   placeholder='Email'
                 />
               </Form.Group>
-              <Form.Group className='abc mb-4'>
-                <Form.Control size='lg' type='text' placeholder='Phone' />
+              <Form.Group className='mb-4'>
+                <Form.Control size='lg' type='number' placeholder='Phone' />
               </Form.Group>
-              <Form.Group
-                controlId='exampleForm.ControlTextarea1'
-                className='abc'
-              >
+              <Form.Group controlId='exampleForm.ControlTextarea1'>
                 <Form.Control
                   as='textarea'
                   rows={5}
                   placeholder='Your message here'
+                  className='mb-4'
                 />
               </Form.Group>
+              <Button variant='primary' type='submit' className='float-right'>
+                Submit
+              </Button>
             </Form>
           </div>
           <div className='details'>

@@ -3,7 +3,7 @@ import { Button, Col, Form, Image, Row } from "react-bootstrap";
 import "./EventsHost.scss";
 
 class UploadImage extends Component {
-  render() {
+  render () {
     return (
       <>
         <Row style={{ marginTop: "2rem" }}>
@@ -35,22 +35,6 @@ class UploadImage extends Component {
               </Form.Group>
               <hr className='mt-5' />
               <Form.Group>
-                <div className='d-flex justify-content-between'>
-                  <button
-                    className='btn bg-light back btn-light'
-                    value='Back'
-                    type='submit'
-                  >
-                    Back
-                  </button>
-                  <button
-                    className='next btn btn-danger'
-                    value='Next'
-                    type='submit'
-                  >
-                    Finish
-                  </button>
-                </div>
               </Form.Group>
             </Form>
           </Col>

@@ -3,7 +3,7 @@ import { Col, Image, Row } from "react-bootstrap";
 import "./EventsHost.scss";
 
 class EventType extends Component {
-  render() {
+  render () {
     return (
       <>
         <Row style={{ marginTop: "2rem" }}>
@@ -36,13 +36,6 @@ class EventType extends Component {
               <input id='describe' type='text' placeholder='Eg. Environment' />
               <br />
               <hr />
-              <button
-                className='next btn btn-danger'
-                value='Next'
-                type='submit'
-              >
-                Next
-              </button>
             </div>
           </Col>
         </Row>

@@ -1,6 +1,7 @@
 import React from "react";
 import "./eventAnalytics.scss";
 import PieChart from "../../components/eventAnalytics/PieChart";
+import BarChart from "../../components/eventAnalytics/BarChart";
 
 class EventAnalytics extends React.Component {
   render() {
@@ -23,12 +24,16 @@ class EventAnalytics extends React.Component {
 
             <div className='age-chart'>
               <h2>Age Chart</h2>
-              <div className='chart-container'></div>
+              <div className='chart-container'>
+                <PieChart></PieChart>
+              </div>
             </div>
 
-            <div className='location-list'>
-              <h2>Location Details</h2>
-              <div className='chart-container'></div>
+            <div className='gender-chart'>
+              <h2>Gender Chart</h2>
+              <div className='chart-container'>
+                <BarChart></BarChart>
+              </div>
             </div>
 
             <div className='retention'>
@@ -38,7 +43,9 @@ class EventAnalytics extends React.Component {
 
             <div className='ux-chart'>
               <h2>User Experience Chart</h2>
-              <div className='chart-container'></div>
+              <div className='chart-container'>
+                <BarChart></BarChart>
+              </div>
             </div>
           </section>
         </div>

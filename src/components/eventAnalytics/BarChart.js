@@ -1,36 +1,58 @@
-import React, { useEffect } from "react";
-import Chart from "chart.js";
-import "./eventAnalytics.scss";
+import { Bar } from "react-chartjs-2";
+import React from "react";
 
-export default function App() {
-  useEffect(() => {
-    const ctx = document.getElementById("myChart");
-    new Chart(ctx, {
-      type: "pie",
-      data: {
-        labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
-        datasets: [
-          {
-            label: "# of Votes",
-            data: [12, 19, 3, 5, 2, 3],
-            backgroundColor: [
-              "Red",
-              "Blue",
-              "Yellow",
-              "Green",
-              "Purple",
-              "Orange",
-            ],
-            borderColor: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
-            borderWidth: 1,
-          },
-        ],
-      },
-    });
-  });
-  return (
-    <div className='App'>
-      <canvas id='myChart' width='400' height='400' />
-    </div>
-  );
+class BarChart extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      labels: ["Male", "Female"],
+      datasets: [
+        {
+          data: [5000, 2000],
+          backgroundColor: ["rgb(234,73,151)", "rgb(114,63,236)"],
+          borderWidth: 1,
+          barPercentage: 0.5,
+        },
+      ],
+    };
+  }
+
+  render() {
+    return (
+      <>
+        <Bar
+          data={{
+            labels: this.state.labels,
+            datasets: this.state.datasets,
+          }}
+          options={{
+            legend: {
+              display: true,
+              position: "bottom",
+              align: "center",
+            },
+            scales: {
+              xAxes: [
+                {
+                  categoryPercentage: 1.0,
+                  barPercentage: 0.45,
+                  stacked: false,
+                },
+              ],
+              yAxes: [
+                {
+                  ticks: {
+                    beginAtZero: true,
+                    stacked: false,
+                  },
+                },
+              ],
+            },
+          }}
+        />
+      </>
+    );
+  }
 }
+
+export default BarChart;

@@ -5,7 +5,6 @@
 }
 body {
   margin: 0;
-
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -171,7 +170,7 @@ main {
   margin-top: 2rem;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 15vh 1fr 30vh 2rem 30vh 5rem 70vh 5rem 70vh 3rem 70vh 3rem 30vh 5rem;
+  grid-template-rows: 15vh 1fr 30vh 5rem 70vh 5rem 60vh 15rem 70vh;
   width: 100vw;
 
   .landing-header {
@@ -242,7 +241,7 @@ main {
       }
 
       h1 {
-        font-size: 3rem;
+        font-size: 2.8rem;
         font-weight: 500;
       }
 
@@ -261,6 +260,294 @@ main {
         padding: 0.8rem 2rem;
         border-radius: 10px;
         font-size: 1.3rem;
+      }
+    }
+  }
+
+  .what-we-do {
+    position: relative;
+    grid-row: 5;
+    grid-column: 2/12;
+    display: flex;
+    justify-content: space-between;
+
+    // background-image: linear-gradient(
+    //     to bottom,
+    //     rgba(255, 255, 255, 0.568),
+    //     rgba(227, 230, 41, 0.486)
+    //   ),
+    //   url("./ngo.png");
+    // width: 100%;
+    // background-size: contain;
+
+    h1 {
+      font-size: 2.8rem;
+    }
+
+    .highlight {
+      color: #723fec;
+    }
+
+    .container-image {
+      width: 50%;
+      position: relative;
+
+      img {
+        position: absolute;
+        left: 0;
+        top: -100px;
+        left: -100px;
+        width: 700px;
+        height: 550px;
+        transform: rotateY(180deg);
+        background-size: 100px;
+      }
+    }
+
+    .content {
+      margin-left: 30rem;
+      p {
+        font-size: 1.4rem;
+      }
+
+      .greyscale {
+        margin: 2rem 0 0 0;
+        color: grey;
+        font-size: 1.2rem;
+      }
+
+      .btn-explore {
+        font-size: 1.2rem;
+        padding: 0.8rem 1.5rem;
+        outline: none;
+        border: none;
+        background-color: $pink;
+        color: white;
+        cursor: pointer;
+        border-radius: 10px;
+      }
+    }
+  }
+
+  .left-corner {
+    position: absolute;
+    top: 185vh;
+    right: 0;
+    z-index: -100;
+
+    img {
+      border-top-left-radius: 45%;
+      height: 700px;
+      width: 30vw;
+    }
+  }
+
+  .left-benefit-corner {
+    position: absolute;
+    top: 180vh;
+    z-index: -100;
+    right: 5vw;
+
+    img {
+      transform: scaleX(-1.1);
+      border-top-left-radius: 40%;
+      height: 800px;
+    }
+  }
+
+  .benefit {
+    .highlight-purple {
+      color: #723fec;
+    }
+
+    .highlight-pink {
+      color: #ea4997;
+    }
+
+    h1 {
+      text-align: left;
+      font-size: 3rem;
+    }
+    grid-row: 6/8;
+    grid-column: 2/12;
+    // background-color: beige;
+
+    .card-wrapper {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+
+      // background-color: aliceblue;
+      width: 90%;
+      height: 60vh;
+
+      h2 {
+        margin-top: 2rem;
+      }
+
+      .volunteer-cards {
+        margin-top: 1rem;
+        .v-card {
+          background-color: #e8dfff;
+        }
+      }
+
+      .org-cards {
+        margin-top: 1rem;
+        .v-card {
+          background-color: #fcc3de;
+        }
+      }
+
+      .volunteer-cards,
+      .org-cards {
+        display: flex;
+        gap: 2rem;
+
+        .v-card {
+          box-shadow: 0px 3px 8px 3px rgba(0, 0, 0, 0.1);
+          height: 25vh;
+          border-radius: 12px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          padding: 1.2rem 2rem 1rem 2rem;
+          width: 210px;
+
+          .v-img {
+            img {
+              width: 90px;
+              height: 90px;
+            }
+          }
+
+          p {
+            margin-bottom: 0 !important;
+            text-align: center;
+          }
+        }
+      }
+
+      .volunteer-card,
+      .organisation-card {
+        // background-color: aquamarine;
+        width: 30vw;
+        background-color: white;
+        border-radius: 10px;
+        margin: 1rem 0;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+
+        h2 {
+          font-size: 1.5rem;
+          margin-bottom: 1rem;
+        }
+
+        ul {
+          flex: 30%;
+          // background-color: wheat;
+          li {
+            font-size: 1.2rem;
+          }
+        }
+
+        button {
+          width: 17vw;
+          outline: none;
+          border: none;
+          margin-top: 4rem;
+          color: white;
+          font-size: 1.2rem;
+          border-radius: 10px;
+          padding: 0.5rem 1.2rem;
+        }
+      }
+
+      .volunteer-card {
+        button {
+          background-color: $purple;
+        }
+
+        li {
+          &::marker {
+            color: $purple;
+          }
+        }
+        margin-right: 2rem;
+      }
+
+      .organisation-card {
+        button {
+          background-color: $pink;
+        }
+        li {
+          &::marker {
+            color: $pink;
+          }
+        }
+      }
+    }
+  }
+
+  .testimonial {
+    grid-row: 9;
+    grid-column: 2/12;
+    margin-bottom: 2rem;
+
+    h1 {
+      width: 85vw;
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .container-reviews {
+      width: 3200px;
+      height: 50vh;
+      display: flex;
+      margin-top: 2rem;
+      gap: 4vw;
+      transition: all 1s;
+
+      .review {
+        padding: 2rem;
+        width: 40vw;
+        height: 50vh;
+        box-shadow: 0px 3px 8px 2px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .content {
+          width: 100%;
+          font-size: 1.3rem;
+          font-weight: normal;
+          text-align: center;
+        }
+      }
+    }
+
+    .indicators {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+
+      .indicator {
+        background: rgba(128, 128, 128, 0.829);
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all 1s;
+      }
+
+      .active {
+        width: 50px;
+        background: $pink;
+        border-radius: 50px;
       }
     }
   }

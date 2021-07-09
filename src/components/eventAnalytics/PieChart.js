@@ -1,4 +1,4 @@
-import { Pie } from "react-chartjs-2";
+import Pie from "react-chartjs-2";
 import React from "react";
 
 class PieChart extends React.Component {
@@ -9,7 +9,11 @@ class PieChart extends React.Component {
       datasets: [
         {
           data: [2000, 4000, 2850],
-          background: ["red", "blue", "green"],
+          backgroundColor: [
+            "rgb(234,73,151)",
+            "rgb(5,155,255)",
+            "rgb(114,63,236)",
+          ],
         },
       ],
     };
@@ -23,9 +27,15 @@ class PieChart extends React.Component {
             labels: this.state.labels,
             datasets: this.state.datasets,
           }}
-          width={100}
-          height={50}
-          options={{ maintainAspectRatio: false }}
+          options={{
+            maintainAspectRatio: true,
+            legend: {
+              position: "right",
+              align: "center",
+              textAlign: "left",
+            },
+          }}
+          width='400px'
         />
       </>
     );

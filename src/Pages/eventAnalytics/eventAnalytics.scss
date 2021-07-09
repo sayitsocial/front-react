@@ -35,7 +35,7 @@
     }
 
     .age-chart,
-    .location-list,
+    .gender-chart,
     .retention,
     .ux-chart {
       margin: 2rem 7rem;
@@ -48,7 +48,14 @@
       }
 
       .chart-container {
-        height: 90%;
+        width: 85%;
+      }
+    }
+
+    .gender-chart {
+      .chart-container {
+        width: 65%;
+        margin: 2rem 10rem;
       }
     }
   }

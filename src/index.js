@@ -18,3 +18,11 @@ ReactDOM.render(
 );
 
 reportWebVitals();
+
+// document.addEventListener( // disable right-click
+//   "contextmenu",
+//   function (e) {
+//     e.preventDefault();
+//   },
+//   false
+// );

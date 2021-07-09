@@ -6,7 +6,7 @@ class EventType extends Component {
   render() {
     return (
       <>
-        <Row style={{ marginTop: "2rem" }}>
+        <Row>
           <Col md={5}>
             <Image
               className='host-img'
@@ -17,8 +17,8 @@ class EventType extends Component {
               fluid
             />
           </Col>
-          <Col md={2}></Col>
-          <Col md={4} className='host-form-1'>
+          <Col md={1}></Col>
+          <Col style={{marginTop:"2rem"}} md={4} className='host-form-1'>
             <h1 className='heading'>Choose Event Type</h1>
             <div className='allinputs'>
               <input id='eventname' type='text' placeholder='Event Name' />{" "}
@@ -36,13 +36,6 @@ class EventType extends Component {
               <input id='describe' type='text' placeholder='Eg. Environment' />
               <br />
               <hr />
-              <button
-                className='next btn btn-danger'
-                value='Next'
-                type='submit'
-              >
-                Next
-              </button>
             </div>
           </Col>
         </Row>

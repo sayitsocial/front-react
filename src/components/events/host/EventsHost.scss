@@ -83,9 +83,9 @@ input[type="text"] {
 }
 .description-img,
 .upload-img {
-  width: 115rem;
+  top:3rem;
   position: relative;
-  top: -2rem;
+  transform:scale(1.2,1.2);
 }
 .v-pts {
   color: whitesmoke;
@@ -93,6 +93,10 @@ input[type="text"] {
   width: 5.5rem;
   padding: 0.35rem;
   border-radius: 10px;
+}
+.pts {
+  height: 2.5rem;
+  width: 5.5rem;
 }
 .number {
   width: 17.25rem;
@@ -122,4 +126,33 @@ input[type="text"] {
 }
 .main-upload {
   margin: 0 auto;
+}
+
+
+.stepper-wrapper{
+  position:absolute;
+  top:10%;
+  right:2%;
+  width:50rem;
+}
+
+
+
+.host-form-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  .container-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 48rem;
+    position: absolute;
+    top: 86%;
+    right: 18%;
+    width: 38rem;
+
+    button {
+      width: 20%;
+    }
+  }
 }

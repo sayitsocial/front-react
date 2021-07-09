@@ -25,7 +25,7 @@ class EventAnalytics extends React.Component {
             <div className='age-chart'>
               <h2>Age Chart</h2>
               <div className='chart-container'>
-                <PieChart></PieChart>
+                <PieChart />
               </div>
             </div>
 

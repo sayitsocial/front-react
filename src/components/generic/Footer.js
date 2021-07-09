@@ -30,7 +30,7 @@ class Footer extends React.Component {
       },
     };
   }
-  render() {
+  render () {
     return (
       <div className='footer-container'>
         <Container>
@@ -45,15 +45,15 @@ class Footer extends React.Component {
               ></ButtonSecondary>
             </Col>
           </Row>
-          <hr class='footer-line' />
+          <hr className='footer-line' />
           <Row>
             {Object.entries(this.state.footerlinks).map(([key, value]) => (
-              <Col xl={3} lg={3} md={4} sm={6}>
+              <Col key={key} xl={3} lg={3} md={4} sm={6}>
                 <div className='footer-widget'>
                   <div className='footer-title'>{key}</div>
                   <ul className='list-unstyled'>
                     {Object.entries(value).map(([key1, value1]) => (
-                      <li>
+                      <li key={key1}>
                         <Link to={value1}>{key1}</Link>
                       </li>
                     ))}
@@ -79,7 +79,7 @@ class Footer extends React.Component {
               </div>
             </Col>
           </Row>
-          <hr class='footer-line' />
+          <hr className='footer-line' />
           <Row>
             <Col className='text-center footer-subtitle'>
               SayItSocial 2020. All Rights Reserved

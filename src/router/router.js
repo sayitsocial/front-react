@@ -13,7 +13,7 @@ import AboutUs from "../Pages/AboutUs/AboutUs";
 import Contact from "../Pages/contact/Contact";
 import EventAnalytics from "../Pages/eventAnalytics/EventAnalytics";
 
-function Routes() {
+function Routes () {
   const routesMain = [
     {
       path: "/register",
@@ -32,7 +32,7 @@ function Routes() {
       main: LoginPage,
     },
     {
-      path: "/event",
+      path: "/event/:id",
       main: Event,
     },
     {

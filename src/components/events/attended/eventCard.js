@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import { Card, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 class EventCard extends Component {
-  render() {
+  render () {
     return (
       <Col md={3}>
         <Card className='card-shadow'>
@@ -34,8 +35,8 @@ class EventCard extends Component {
                 src='http://jlantunez.com/imgs/avatar.jpg'
                 alt='Avatar'
               />
-              <p className='joined blue-text'>{this.props.footer_link}</p>
             </p>
+            <Link className='joined blue-text' to={this.props.footer_link}>{this.props.footer_name}</Link>
           </Card.Footer>
         </Card>
       </Col>

@@ -12,11 +12,11 @@ import {
 import "./EventsHost.scss";
 
 class EventDescription extends Component {
-  render() {
+  render () {
     return (
       <>
-        <Row>
-          <Col md={5}>
+        <Row style={{ marginTop: "2rem" }}>
+          <Col md={6}>
             <Image
               className='description-img'
               src={process.env.PUBLIC_URL + "/register/about-you-model.png"}
@@ -26,7 +26,7 @@ class EventDescription extends Component {
           </Col>
           <Col md={1}></Col>
           <Col md={4} className='host-form-1'>
-            <div style={{marginTop:"7rem"}}>
+            <div>
               <h2 className='heading-2 mb-5'>Event Description</h2>
               <textarea
                 className='p-2 description'

@@ -53,15 +53,15 @@ class ContactForm extends Component {
               <div className='d-flex mt-3'>
                 <Image
                   className='contact-icons mr-3'
-                  src={process.env.PUBLIC_URL + "/contact/linkedin.svg"}
+                  src={process.env.PUBLIC_URL + "/contact/linkedin.png"}
                 />
                 <Image
                   className='contact-icons mr-3'
-                  src={process.env.PUBLIC_URL + "/contact/instagram.svg"}
+                  src={process.env.PUBLIC_URL + "/contact/instagram.png"}
                 />
                 <Image
                   className='contact-icons mr-3'
-                  src={process.env.PUBLIC_URL + "/contact/facebook.svg"}
+                  src={process.env.PUBLIC_URL + "/contact/facebook.png"}
                 />
               </div>
             </div>

@@ -60,7 +60,10 @@ class AttendeesWindow extends React.Component {
               <div className='event-date white-card'>
                 <i>icon </i> Sat. 15 Aug. 2020 at 04:00 PM
               </div>
-              <div onClick={this.toggleHandler} className='event-buttons'>
+              <div
+                onClick={this.toggleHandler}
+                className='event-buttons transition'
+              >
                 {content}
                 {/* <AttendButton /> */}
                 {/* <CancelAttendButton /> */}

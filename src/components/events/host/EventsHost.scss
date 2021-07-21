@@ -162,7 +162,19 @@ input[type="text"] {
   border: none !important;
   outline: none !important;
   border-radius: 7px;
+  border: 2px solid #b19be4 !important;
+  box-sizing: border-box !important;
 }
+.react-calendar__navigation {
+  border-bottom: 2px solid #b19be4 !important;
+}
+
+.react-calendar__year-view .react-calendar__tile,
+.react-calendar__decade-view .react-calendar__tile,
+.react-calendar__century-view .react-calendar__tile {
+  padding: 1.3em 0.5em !important;
+}
+
 .react-calendar__viewContainer button:focus,
 .react-calendar__viewContainer button:active,
 .react-calendar__viewContainer button:checked,

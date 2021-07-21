@@ -6,6 +6,7 @@ import "./EventsHost.scss";
 
 function ChooseDate() {
   const [value, onChange] = useState(new Date());
+  
 
   return (
     <>

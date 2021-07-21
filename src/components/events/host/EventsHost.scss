@@ -16,7 +16,7 @@ input[type="text"] {
   margin-top: 7rem;
   color: black;
   letter-spacing: 1.5px;
-  font-size: 40px;
+  font-size: 37.5px;
 }
 .heading-2 {
   margin-top: 4.25rem;
@@ -164,6 +164,8 @@ input[type="text"] {
   border-radius: 7px;
   border: 2px solid #b19be4 !important;
   box-sizing: border-box !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 .react-calendar__navigation {
   border-bottom: 2px solid #b19be4 !important;
@@ -188,4 +190,32 @@ input[type="text"] {
 .calendar abbr {
   text-decoration: none !important;
   cursor: default !important;
+  font-family: "Kanit", sans-serif !important;
+}
+
+.react-calendar__navigation__next2-button,
+.react-calendar__navigation__prev2-button {
+  display: none !important;
+}
+.react-calendar__navigation__prev-button,
+.react-calendar__navigation__next-button {
+  font-size: 24px !important;
+}
+
+.MuiInputBase-input,
+.MuiInput-input,
+.MuiInputBase-input:hover,
+.MuiInput-input:hover {
+  text-align: center;
+  width: 7.5rem !important;
+  border: 2px solid #b19be4 !important;
+  border-radius: 5px !important;
+  outline: none !important;
+  cursor: pointer !important;
+}
+
+.MuiInput-underline::after,
+.MuiInput-underline::before {
+  content: none !important;
+  cursor: pointer !important;
 }

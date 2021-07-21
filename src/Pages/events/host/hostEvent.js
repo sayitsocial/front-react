@@ -2,24 +2,23 @@ import React, { Component } from "react";
 import EventType from "../../../components/events/host/EventType";
 import EventDescription from "../../../components/events/host/EventDescription";
 import UploadImage from "../../../components/events/host/UploadImage";
-import { Col, Row } from "react-bootstrap";
+import { Col, Row, Modal } from "react-bootstrap";
 import Stepper from "@material-ui/core/Stepper";
 import Step from "@material-ui/core/Step";
 import StepLabel from "@material-ui/core/StepLabel";
 import ChooseDate from "../../../components/events/host/ChooseDate";
-import {Modal} from "react-bootstrap";
 
 class Host extends Component {
   state = {
     count: 0,
-    show:false
+    show: false,
   };
 
   setShow = (bvalue) => {
     this.setState({
-      show: bvalue
-    })
-  }
+      show: bvalue,
+    });
+  };
 
   incrementPage = () => {
     this.setState((prev) => ({
@@ -55,7 +54,8 @@ class Host extends Component {
       "UPLOAD IMAGE",
     ];
 
-    let buttonContainerStyle = this.state.count === 0 ? { right : "25%" } : { right : "18%"};
+    let buttonContainerStyle =
+      this.state.count === 0 ? { right: "25%" } : { right: "18%" };
 
     return (
       <>
@@ -77,19 +77,25 @@ class Host extends Component {
             <div className='host-form-wrapper'>
               <div>{this.renderPage()}</div>
               <div className='container-buttons' style={buttonContainerStyle}>
-                {this.state.count !== 0 ? <button
-                  className='btn bg-light btn-light backBtn'
-                  value='Back'
-                  type='submit'
-                  onClick={this.decrementPage}
-                >
-                  Back
-                </button> : null}
+                {this.state.count !== 0 ? (
+                  <button
+                    className='btn bg-light btn-light backBtn'
+                    value='Back'
+                    type='submit'
+                    onClick={this.decrementPage}
+                  >
+                    Back
+                  </button>
+                ) : null}
                 <button
                   className='btn btn-danger'
                   value='Next'
                   type='submit'
-                  onClick={this.state.count === 3 ? () => this.setShow(true) : this.incrementPage}
+                  onClick={
+                    this.state.count === 3
+                      ? () => this.setShow(true)
+                      : this.incrementPage
+                  }
                 >
                   {this.state.count === 3 ? "Submit" : "Next"}
                 </button>
@@ -100,20 +106,18 @@ class Host extends Component {
         <Modal
           show={this.state.show}
           onHide={() => this.setShow(false)}
-          dialogClassName="modal-90w"
-          aria-labelledby="example-custom-modal-styling-title"
+          dialogClassName='modal-90w'
+          aria-labelledby='example-custom-modal-styling-title'
         >
           <Modal.Header closeButton>
-            <Modal.Title id="example-custom-modal-styling-title">
+            <Modal.Title id='example-custom-modal-styling-title'>
               Confirm your event details
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <p>
-              Form Data
-            </p>
+            <p>Form Data</p>
           </Modal.Body>
-      </Modal>
+        </Modal>
       </>
     );
   }

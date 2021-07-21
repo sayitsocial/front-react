@@ -2,9 +2,6 @@ import React, { Component } from "react";
 import {
   Button,
   Col,
-  Dropdown,
-  DropdownButton,
-  Form,
   FormControl,
   Image,
   InputGroup,
@@ -41,10 +38,12 @@ class EventDescription extends Component {
                   <h5 className='mt-4 mb-3'>Contact Information</h5>
                   <InputGroup className='mb-3 number'>
                     <Button
-                      style={{borderRadius:"4px 0 0 4px"}}
+                      style={{ borderRadius: "4px 0 0 4px" }}
                       variant='dark'
                       value='+91 IND'
-                    >+91 IND</Button>
+                    >
+                      +91 IND
+                    </Button>
                     <FormControl
                       className='number'
                       aria-describedby='basic-addon1'

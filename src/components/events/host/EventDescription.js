@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import {
+  Button,
   Col,
   Dropdown,
   DropdownButton,
@@ -26,7 +27,7 @@ class EventDescription extends Component {
           </Col>
           <Col md={1}></Col>
           <Col md={4} className='host-form-1'>
-            <div style={{marginTop:"7rem"}}>
+            <div style={{ marginTop: "7rem" }}>
               <h2 className='heading-2 mb-5'>Event Description</h2>
               <textarea
                 className='p-2 description'
@@ -39,17 +40,11 @@ class EventDescription extends Component {
                 <div>
                   <h5 className='mt-4 mb-3'>Contact Information</h5>
                   <InputGroup className='mb-3 number'>
-                    <DropdownButton
-                      as={InputGroup.Prepend}
-                      title='+91 IND'
+                    <Button
+                      style={{borderRadius:"4px 0 0 4px"}}
                       variant='dark'
-                      id='input-group-dropdown-1'
-                    >
-                      <Dropdown.Item href='#'>India</Dropdown.Item>
-                      <Dropdown.Item href='#'>Australia</Dropdown.Item>
-                      <Dropdown.Item href='#'>Spain</Dropdown.Item>
-                      <Dropdown.Item href='#'>Germany</Dropdown.Item>
-                    </DropdownButton>
+                      value='+91 IND'
+                    >+91 IND</Button>
                     <FormControl
                       className='number'
                       aria-describedby='basic-addon1'

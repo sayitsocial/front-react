@@ -2,11 +2,11 @@ import React, { Component } from "react";
 import EventType from "../../../components/events/host/EventType";
 import EventDescription from "../../../components/events/host/EventDescription";
 import UploadImage from "../../../components/events/host/UploadImage";
-import { Col, Image, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import Stepper from "@material-ui/core/Stepper";
 import Step from "@material-ui/core/Step";
 import StepLabel from "@material-ui/core/StepLabel";
-import { getSuggestedQuery } from "@testing-library/react";
+import ChooseDate from "../../../components/events/host/ChooseDate";
 
 class Host extends Component {
   state = {
@@ -15,7 +15,7 @@ class Host extends Component {
 
   incrementPage = () => {
     this.setState((prev) => ({
-      count: prev.count === 2 ? prev.count : prev.count + 1,
+      count: prev.count === 3 ? prev.count : prev.count + 1,
     }));
   };
 
@@ -25,37 +25,41 @@ class Host extends Component {
     }));
   };
 
-
   renderPage = () => {
     switch (this.state.count) {
       default:
       case 0:
         return <EventType />;
       case 1:
-        return <EventDescription />;
+        return <ChooseDate />;
       case 2:
+        return <EventDescription />;
+      case 3:
         return <UploadImage />;
     }
   };
 
-  
   render() {
     const steps = [
       "EVENT TYPE",
       "CHOOSE DATE",
       "EVENT DETAILS",
-      "UPLOAD IMAGE"
+      "UPLOAD IMAGE",
     ];
 
     return (
       <>
-        <div className="stepper-wrapper">
-          <Stepper style={{backgroundColor:"whitesmoke"}} activeStep={this.state.count} alternativeLabel>
-              {steps.map((label) => (
-                <Step key={label}>
-                  <StepLabel>{label}</StepLabel>
-                </Step>
-              ))}
+        <div className='stepper-wrapper'>
+          <Stepper
+            style={{ backgroundColor: "whitesmoke" }}
+            activeStep={this.state.count}
+            alternativeLabel
+          >
+            {steps.map((label) => (
+              <Step key={label}>
+                <StepLabel>{label}</StepLabel>
+              </Step>
+            ))}
           </Stepper>
         </div>
         <Row>
@@ -64,7 +68,7 @@ class Host extends Component {
               <div>{this.renderPage()}</div>
               <div className='container-buttons'>
                 <button
-                  className='btn bg-light btn-light'
+                  className='btn bg-light btn-light backBtn'
                   value='Back'
                   type='submit'
                   onClick={this.decrementPage}

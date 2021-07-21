@@ -9,21 +9,19 @@ class EventType extends Component {
         <Row>
           <Col md={5}>
             <Image
-              className='host-img'
-              src={
-                process.env.PUBLIC_URL + "/register/choose-identity-model.png"
-              }
+              className='upload-img'
+              src={process.env.PUBLIC_URL + "/register/about-you-model.png"}
               alt=''
               fluid
             />
           </Col>
           <Col md={1}></Col>
-          <Col style={{marginTop:"2rem"}} md={4} className='host-form-1'>
+          <Col  md={4} className='host-form-1'>
             <h1 className='heading'>Choose Event Type</h1>
             <div className='allinputs'>
               <input id='eventname' type='text' placeholder='Event Name' />{" "}
               <br />
-              <label id='button1' className='mb-4'>
+              <label id='button1' className='mb-3'>
                 <input type='radio' />
                 <span className='ml-3'>In Person</span>
               </label>
@@ -32,7 +30,7 @@ class EventType extends Component {
                 <option value='activity'>Activity</option>
                 <option value='get together'>Get Together</option>
               </select>
-              <h4 className='catagories'>Event Categories</h4>
+              <h4 className='catagories mb-3'>Event Categories</h4>
               <input id='describe' type='text' placeholder='Eg. Environment' />
               <br />
               <hr />

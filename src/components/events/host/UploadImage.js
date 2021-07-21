@@ -32,7 +32,7 @@ class UploadImage extends Component {
                   <Form.File className='mt-3 mb-2' id='upload-image' />
                 </label>
               </Form.Group>
-              <hr className='mt-5' />
+              <hr style={{marginTop:"3.75rem"}} />
               <Form.Group></Form.Group>
             </Form>
           </Col>

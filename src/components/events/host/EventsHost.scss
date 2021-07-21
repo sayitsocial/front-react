@@ -83,16 +83,16 @@ input[type="text"] {
 }
 .description-img,
 .upload-img {
-  top:3rem;
+  top: 3rem;
   position: relative;
-  transform:scale(1.2,1.2);
+  transform: scale(1.2, 1.2);
 }
 .v-pts {
   color: whitesmoke;
   height: 2.5rem;
   width: 5.5rem;
   padding: 0.35rem;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .pts {
   height: 2.5rem;
@@ -126,17 +126,15 @@ input[type="text"] {
 }
 .main-upload {
   margin: 0 auto;
+  cursor: pointer;
 }
 
-
-.stepper-wrapper{
-  position:absolute;
-  top:10%;
-  right:2%;
-  width:50rem;
+.stepper-wrapper {
+  position: absolute;
+  top: 10%;
+  right: 2%;
+  width: 50rem;
 }
-
-
 
 .host-form-wrapper {
   display: flex;
@@ -155,4 +153,27 @@ input[type="text"] {
       width: 20%;
     }
   }
+}
+
+// CHOOSE DATE PAGE
+
+.calendar {
+  margin-top: 0.5rem !important;
+  border: none !important;
+  outline: none !important;
+  border-radius: 7px;
+}
+.react-calendar__viewContainer button:focus,
+.react-calendar__viewContainer button:active,
+.react-calendar__viewContainer button:checked,
+.react-calendar__tile--active {
+  background-color: #ea4997 !important;
+}
+.react-calendar__tile--now {
+  background-color: #b19be4 !important;
+  color: white;
+}
+.calendar abbr {
+  text-decoration: none !important;
+  cursor: default !important;
 }

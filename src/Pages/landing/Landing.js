@@ -3,6 +3,7 @@ import LocationOnOutlinedIcon from "@material-ui/icons/LocationOnOutlined";
 import SearchIcon from "@material-ui/icons/Search";
 import EventCard from "../../components/events/attended/eventCard";
 import FormatQuoteIcon from "@material-ui/icons/FormatQuote";
+import { ArrowBack,ArrowForward } from "@material-ui/icons";
 
 export default class Landing extends Component {
   componentDidMount = () => {
@@ -256,8 +257,12 @@ export default class Landing extends Component {
               </div>
             </div>
             <div className='indicators'>
-              <div className='indicator active'></div>
-              <div className='indicator'></div>
+              <div className='indicator active'>
+                  <ArrowBack/>
+              </div>
+              <div className='indicator'>
+                  <ArrowForward/>
+              </div>
             </div>
           </section>
 

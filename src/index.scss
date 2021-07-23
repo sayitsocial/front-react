@@ -540,18 +540,24 @@ main {
       margin-top: 2rem;
 
       .indicator {
-        background: rgba(128, 128, 128, 0.829);
-        width: 20px;
-        height: 20px;
+        background: white;
+        box-shadow: 0 3px 4px 1px rgba(0, 0, 0, 0.1);
+        width: 32px;
+        height: 32px;
         border-radius: 50%;
         cursor: pointer;
         transition: all 1s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
 
       .active {
-        width: 50px;
+        width: 32px;
+        height: 32px;
         background: $pink;
         border-radius: 50px;
+        color:white;
       }
     }
   }

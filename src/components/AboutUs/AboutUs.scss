@@ -5,13 +5,43 @@
 }
 .card-bottom {
   display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
 }
 .role {
-  margin-right: 3rem;
+  margin-bottom: 1rem;
+}
+.linkedin {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 .ourteam-row {
-  margin-top: 4rem;
-  margin-left: 7rem;
+  // margin-top: 4rem;
+  // margin-left: 7rem;
+  display: flex;
+  flex-wrap: wrap;
+  // flex-direction: row;
+  width: 85rem;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.team-card {
+  display: flex;
+  flex-direction: column;
+  width: 14.5rem;
+  margin-top: 3rem;
+  box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.7);
+  // border-radius: 5px;
+}
+.person-name {
+  font-size: 22px;
+  // text-align: center;
+  padding: 8px 0 0 20px;
+  font-weight: 500;
+  margin-bottom: 5px;
 }
 .goal {
   text-align: center;

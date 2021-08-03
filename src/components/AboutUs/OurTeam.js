@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { Col, Row } from "react-bootstrap";
 import TeamCard from "./TeamCard";
+import team_data from "./team_data";
 import "./AboutUs.scss";
 
 class OurTeam extends Component {
@@ -8,34 +8,11 @@ class OurTeam extends Component {
     return (
       <>
         <h3 className='ourteam-heading'>Our Team</h3>
-        <Row className='ourteam-row'>
-          <Col>
-            <TeamCard />
-          </Col>
-          <Col>
-            <TeamCard />
-          </Col>
-          <Col>
-            <TeamCard />
-          </Col>
-          <Col>
-            <TeamCard />
-          </Col>
-        </Row>
-        <Row className='ourteam-row'>
-          <Col>
-            <TeamCard />
-          </Col>
-          <Col>
-            <TeamCard />
-          </Col>
-          <Col>
-            <TeamCard />
-          </Col>
-          <Col>
-            <TeamCard />
-          </Col>
-        </Row>
+        <div className='ourteam-row'>
+          {team_data.map((data) => {
+            return <TeamCard {...data} />;
+          })}
+        </div>
       </>
     );
   }
